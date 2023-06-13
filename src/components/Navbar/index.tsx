@@ -49,6 +49,8 @@ export const Navbar = () => {
 				</Flex>
 				<Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
 					<Box
+						as={NextLink}
+						href={'/'}
 						textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
 						fontFamily={'heading'}
 						color={useColorModeValue('gray.800', 'white')}

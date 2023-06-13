@@ -47,6 +47,8 @@ export const CardCustomer = () => {
 										<Image src={item.iconFirstButton} alt={item.altFirstButton} />
 									</Flex>
 								}
+								as={NextLink}
+								href={item.urlFirstButton}
 							>
 								{item.textFirstButton}
 							</Button>
@@ -62,6 +64,8 @@ export const CardCustomer = () => {
 										<Image src={item.iconSecondButton} alt={item.altSecondButton} />
 									</Flex>
 								}
+								as={NextLink}
+								href={item.urlSecondButton}
 							>
 								{item.textSecondButton}
 							</Button>

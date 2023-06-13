@@ -4,6 +4,7 @@ import { ContainerMain, TitleSection } from '@/components/Common';
 
 import { Button, Flex, Stack, Text } from '@chakra-ui/react';
 import Image from 'next/image';
+import NextLink from 'next/link';
 import { useState } from 'react';
 
 export const DigitalTwin = () => {
@@ -75,7 +76,14 @@ export const DigitalTwin = () => {
 						</Text>
 						, optimize energy assets, and ultimately improve the overall efficiency and reliability of your energy infrastructure.
 					</Text>
-					<Button flex={1} size="xl" variant={'primary'}>
+					<Button
+						flex={1}
+						size="xl"
+						variant={'primary'}
+						as={NextLink}
+						href={'https://questionnaire.enline-transmission.com/'}
+						target={'_blank'}
+					>
 						Schedule a meeting
 					</Button>
 				</Flex>

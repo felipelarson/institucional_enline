@@ -7,9 +7,11 @@ export const CARD_CUSTUMER = [
 		iconFirstButton: require('@/assets/svg/icon_liveview.svg'),
 		altFirstButton: 'icon_liveview',
 		textFirstButton: 'Enline LiveView',
+		urlFirstButton: '/solutions/liveview',
 		iconSecondButton: require('@/assets/svg/icon_predictpro.svg'),
 		altSecondButton: 'icon_predictpro',
-		textSecondButton: 'Enline PredictPro'
+		textSecondButton: 'Enline PredictPro',
+		urlSecondButton: '/solutions/predictpro'
 	},
 	{
 		icons: 'distribution',
@@ -19,9 +21,11 @@ export const CARD_CUSTUMER = [
 		iconFirstButton: require('@/assets/svg/icon_liveview.svg'),
 		altFirstButton: 'icon_liveview',
 		textFirstButton: 'Enline LiveView',
+		urlFirstButton: '/solutions/liveview',
 		iconSecondButton: require('@/assets/svg/icon_optimax.svg'),
 		altSecondButton: 'icon_optimax',
-		textSecondButton: 'Enline OptiMax'
+		textSecondButton: 'Enline OptiMax',
+		urlSecondButton: '/solutions/optimax'
 	},
 	{
 		icons: 'electrical_box',
@@ -31,9 +35,11 @@ export const CARD_CUSTUMER = [
 		iconFirstButton: require('@/assets/svg/icon_liveview.svg'),
 		altFirstButton: 'icon_liveview',
 		textFirstButton: 'Enline LiveView',
+		urlFirstButton: '/solutions/liveview',
 		iconSecondButton: require('@/assets/svg/icon_smartdesign.svg'),
 		altSecondButton: 'icon_smartdesign',
-		textSecondButton: 'Enline SmartDesign'
+		textSecondButton: 'Enline SmartDesign',
+		urlSecondButton: '/solutions/smartdesign'
 	},
 	{
 		icons: 'risk_management',
@@ -43,9 +49,11 @@ export const CARD_CUSTUMER = [
 		iconFirstButton: require('@/assets/svg/icon_liveview.svg'),
 		altFirstButton: 'icon_liveview',
 		textFirstButton: 'Enline LiveView',
+		urlFirstButton: '/solutions/liveview',
 		iconSecondButton: require('@/assets/svg/icon_predictpro.svg'),
 		altSecondButton: 'icon_predictpro',
-		textSecondButton: 'Enline PredictPro'
+		textSecondButton: 'Enline PredictPro',
+		urlSecondButton: '/solutions/predictpro'
 	},
 	{
 		icons: 'renewable',
@@ -55,9 +63,11 @@ export const CARD_CUSTUMER = [
 		iconFirstButton: require('@/assets/svg/icon_liveview.svg'),
 		altFirstButton: 'icon_liveview',
 		textFirstButton: 'Enline LiveView',
+		urlFirstButton: '/solutions/liveview',
 		iconSecondButton: require('@/assets/svg/icon_predictpro.svg'),
 		altSecondButton: 'icon_predictpro',
-		textSecondButton: 'Enline PredictPro'
+		textSecondButton: 'Enline PredictPro',
+		urlSecondButton: '/solutions/predictpro'
 	},
 	{
 		icons: 'research',
@@ -67,9 +77,11 @@ export const CARD_CUSTUMER = [
 		iconFirstButton: require('@/assets/svg/icon_optimax.svg'),
 		altFirstButton: 'icon_optimax',
 		textFirstButton: 'Enline OptiMax',
+		urlFirstButton: '/solutions/optimax',
 		iconSecondButton: require('@/assets/svg/icon_smartdesign.svg'),
 		altSecondButton: 'icon_smartdesign',
-		textSecondButton: 'Enline SmartDesign'
+		textSecondButton: 'Enline SmartDesign',
+		urlSecondButton: '/solutions/smartdesign'
 	},
 	{
 		icons: 'electric',
@@ -79,9 +91,11 @@ export const CARD_CUSTUMER = [
 		iconFirstButton: require('@/assets/svg/icon_liveview.svg'),
 		altFirstButton: 'icon_liveview',
 		textFirstButton: 'Enline LiveView',
+		urlFirstButton: '/solutions/liveview',
 		iconSecondButton: require('@/assets/svg/icon_optimax.svg'),
 		altSecondButton: 'icon_optimax',
-		textSecondButton: 'Enline OptiMax'
+		textSecondButton: 'Enline OptiMax',
+		urlSecondButton: '/solutions/optimax'
 	},
 	{
 		icons: 'industry',
@@ -91,9 +105,11 @@ export const CARD_CUSTUMER = [
 		iconFirstButton: require('@/assets/svg/icon_optimax.svg'),
 		altFirstButton: 'icon_optimax',
 		textFirstButton: 'Enline OptiMax',
+		urlFirstButton: '/solutions/optimax',
 		iconSecondButton: require('@/assets/svg/icon_safeguard.svg'),
 		altSecondButton: 'icon_safeguard',
-		textSecondButton: 'Enline SafeGuard'
+		textSecondButton: 'Enline SafeGuard',
+		urlSecondButton: '/solutions/safeguard'
 	},
 	{
 		icons: 'operation',
@@ -103,8 +119,10 @@ export const CARD_CUSTUMER = [
 		iconFirstButton: require('@/assets/svg/icon_liveview.svg'),
 		altFirstButton: 'icon_liveview',
 		textFirstButton: 'Enline LiveView',
+		urlFirstButton: '/solutions/liveview',
 		iconSecondButton: require('@/assets/svg/icon_predictpro.svg'),
 		altSecondButton: 'icon_predictpro',
-		textSecondButton: 'Enline PredictPro'
+		textSecondButton: 'Enline PredictPro',
+		urlSecondButton: '/solutions/predictpro'
 	}
 ];

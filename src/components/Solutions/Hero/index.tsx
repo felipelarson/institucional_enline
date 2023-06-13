@@ -73,7 +73,6 @@ export const Hero = () => {
 
 					<Button
 						as={NextLink}
-						href={'#'}
 						borderRadius={'full'}
 						px={'16px'}
 						py={'6px'}
@@ -83,6 +82,8 @@ export const Hero = () => {
 						w={'fit-content'}
 						size={'lg'}
 						fontSize={'14px'}
+						href={'https://questionnaire.enline-transmission.com/'}
+						target={'_blank'}
 					>
 						Schedule a meeting
 					</Button>

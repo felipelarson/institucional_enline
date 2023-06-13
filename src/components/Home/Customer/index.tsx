@@ -16,7 +16,7 @@ export const Customer = () => {
 				<TitleSection
 					title="Customer Segments"
 					subtitle="Tailored Solutions for the Energy Sector"
-					description="Explore how Enline’s technology delivers customized benefits to a wide range of industries and customer types, driving efficiency and sustainability across the energy sector."
+					description="Explore how Enline`s technology delivers customized benefits to a wide range of industries and customer types, driving efficiency and sustainability across the energy sector."
 				/>
 
 				<Flex gap={4} direction={['column', 'column', 'column', 'row']}>
@@ -113,7 +113,7 @@ export const Customer = () => {
 						gap={8}
 					>
 						<Text fontSize={'14px'} lineHeight={'19.6px'} fontWeight={'400'}>
-							Explore our customer segments and see how Enline’s innovative technology is driving efficiency and sustainability across
+							Explore our customer segments and see how Enline`s innovative technology is driving efficiency and sustainability across
 							diverse industries.
 						</Text>
 						<Button as={NextLink} href={'/customer'} size="xl" variant={'primary'}>

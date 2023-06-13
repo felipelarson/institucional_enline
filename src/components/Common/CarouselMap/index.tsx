@@ -94,7 +94,6 @@ export const CarouselMap = ({ location }: IMyCarousel) => {
 				infinite={true}
 				autoPlay={true}
 				autoPlaySpeed={3000}
-				partialVisbile
 				removeArrowOnDeviceType={['desktop', 'tablet', 'mobile']}
 			>
 				{cards.map((url, index) => (

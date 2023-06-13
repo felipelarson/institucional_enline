@@ -5,7 +5,7 @@ export const TableReleaseVersions = () => {
 	return (
 		<Box flex={1} mt={20}>
 			<Card variant={'outline'} bg={'#F1F6FF'}>
-				{/* <Card variant={'outline'} bg={'#F1F6FF'} position={'fixed'} minW={'310px'} zIndex={1}> */}
+				{/* <Card variant={'outline'} bg={'#F1F6FF'} position={'fixed'} minW={'310px'} zIndex={1} scrollMarginBottom={'-1120'}> */}
 				<CardHeader>
 					<Text as={'b'} fontSize="sm">
 						Release versions

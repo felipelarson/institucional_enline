@@ -11,6 +11,7 @@ interface ITechnologyData {
 	buttonList: {
 		title: string;
 		link: string;
+		urlButton: string;
 	}[];
 	sectionList: {
 		title: string;
@@ -49,15 +50,18 @@ export const TECHNOLOGY_DATA: { [key: string]: ITechnologyData } = {
 		buttonList: [
 			{
 				title: 'Enline LiveView',
-				link: require(`@/assets/svg/icon_liveview.svg`)
+				link: require(`@/assets/svg/icon_liveview.svg`),
+				urlButton: '/solutions/liveview'
 			},
 			{
 				title: 'Enline PredictPro',
-				link: require(`@/assets/svg/icon_predictpro.svg`)
+				link: require(`@/assets/svg/icon_predictpro.svg`),
+				urlButton: '/solutions/predictpro'
 			},
 			{
 				title: 'Enline OptiMax',
-				link: require(`@/assets/svg/icon_optimax.svg`)
+				link: require(`@/assets/svg/icon_optimax.svg`),
+				urlButton: '/solutions/optimax'
 			}
 		],
 		sectionList: [
@@ -97,15 +101,18 @@ export const TECHNOLOGY_DATA: { [key: string]: ITechnologyData } = {
 		buttonList: [
 			{
 				title: 'Enline LiveView',
-				link: require(`@/assets/svg/icon_liveview.svg`)
+				link: require(`@/assets/svg/icon_liveview.svg`),
+				urlButton: '/solutions/liveview'
 			},
 			{
 				title: 'Enline PredictPro',
-				link: require(`@/assets/svg/icon_predictpro.svg`)
+				link: require(`@/assets/svg/icon_predictpro.svg`),
+				urlButton: '/solutions/predictpro'
 			},
 			{
 				title: 'Enline SafeGuard',
-				link: require(`@/assets/svg/icon_safeguard.svg`)
+				link: require(`@/assets/svg/icon_safeguard.svg`),
+				urlButton: '/solutions/safeguard'
 			}
 		],
 		sectionList: [
@@ -145,15 +152,18 @@ export const TECHNOLOGY_DATA: { [key: string]: ITechnologyData } = {
 		buttonList: [
 			{
 				title: 'Enline LiveView',
-				link: require(`@/assets/svg/icon_liveview.svg`)
+				link: require(`@/assets/svg/icon_liveview.svg`),
+				urlButton: '/solutions/liveview'
 			},
 			{
 				title: 'Enline PredictPro',
-				link: require(`@/assets/svg/icon_predictpro.svg`)
+				link: require(`@/assets/svg/icon_predictpro.svg`),
+				urlButton: '/solutions/predictpro'
 			},
 			{
 				title: 'Enline OptiMax',
-				link: require(`@/assets/svg/icon_optimax.svg`)
+				link: require(`@/assets/svg/icon_optimax.svg`),
+				urlButton: '/solutions/optimax'
 			}
 		],
 		sectionList: [
@@ -193,15 +203,18 @@ export const TECHNOLOGY_DATA: { [key: string]: ITechnologyData } = {
 		buttonList: [
 			{
 				title: 'Enline LiveView',
-				link: require(`@/assets/svg/icon_liveview.svg`)
+				link: require(`@/assets/svg/icon_liveview.svg`),
+				urlButton: '/solutions/liveview'
 			},
 			{
 				title: 'Enline PredictPro',
-				link: require(`@/assets/svg/icon_predictpro.svg`)
+				link: require(`@/assets/svg/icon_predictpro.svg`),
+				urlButton: '/solutions/predictpro'
 			},
 			{
 				title: 'Enline OptiMax',
-				link: require(`@/assets/svg/icon_optimax.svg`)
+				link: require(`@/assets/svg/icon_optimax.svg`),
+				urlButton: '/solutions/optimax'
 			}
 		],
 		sectionList: [

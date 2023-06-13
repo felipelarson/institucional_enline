@@ -1,4 +1,5 @@
 import { Box, Button, Flex, Heading, Stack, Text } from '@chakra-ui/react';
+import NextLink from 'next/link';
 import { FiArrowDownCircle } from 'react-icons/fi';
 
 export const Hero = () => {
@@ -32,11 +33,11 @@ export const Hero = () => {
 				<Text color="gray.500" fontSize="xl" textAlign={['center', 'center', 'left', 'left']} maxW={350}>
 					Transform your energy infrastructure monitoring and maintenance with
 					<Text as={'span'} color={'purple.500'} fontWeight={500}>
-						Enline’s sensorless A.I.-driven digital twin solution
+						Enline`s sensorless A.I.-driven digital twin solution
 					</Text>
 				</Text>
 				<Stack spacing={6} direction={'column'}>
-					<Button size="xl" variant={'primary'}>
+					<Button size="xl" variant={'primary'} as={NextLink} href={'https://questionnaire.enline-transmission.com/'} target={'_blank'}>
 						<Text>Schedule a meeting</Text>
 					</Button>
 					<Button size="sm" rightIcon={<FiArrowDownCircle />} variant={'secondary'}>

@@ -1,33 +1,9 @@
 import bg from '@/assets/img/bg_footer.png';
 
-import { chakra, Container, Link, SimpleGrid, Stack, Text, VisuallyHidden, useColorModeValue, Button, Flex } from '@chakra-ui/react';
+import { Container, Link, SimpleGrid, Stack, Text, Button, Flex, Box } from '@chakra-ui/react';
 import Image from 'next/image';
-import { ReactNode } from 'react';
+import NextLink from 'next/link';
 import { FiInstagram, FiLinkedin, FiYoutube } from 'react-icons/fi';
-
-const SocialButton = ({ children, label, href }: { children: ReactNode; label: string; href: string }) => {
-	return (
-		<chakra.button
-			bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}
-			rounded={'full'}
-			w={8}
-			h={8}
-			cursor={'pointer'}
-			as={'a'}
-			href={href}
-			display={'inline-flex'}
-			alignItems={'center'}
-			justifyContent={'center'}
-			transition={'background 0.3s ease'}
-			_hover={{
-				bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200')
-			}}
-		>
-			<VisuallyHidden>{label}</VisuallyHidden>
-			{children}
-		</chakra.button>
-	);
-};
 
 export const Footer = () => {
 	return (
@@ -35,8 +11,13 @@ export const Footer = () => {
 			<Container as={Stack} maxW={'6xl'} py={10}>
 				<SimpleGrid templateColumns={{ sm: '1fr 1fr', md: '2fr 1fr 1fr 2fr' }} spacing={8} borderBottom={'1px solid'} pb={8}>
 					<Stack spacing={6}>
-						<Image src={require('@/assets/svg/brand_enline_white.svg')} alt="Enline's brand" />
-						<Image src={require('@/assets/img/startup.png')} alt="Enline's brand" height={87} />
+						<Box as={NextLink} href={'/'}>
+							<Image src={require('@/assets/svg/brand_enline_white.svg')} alt="Enline's brand" />
+						</Box>
+
+						<Box as={NextLink} href="/pdf/Ficha_do_Projeto_RHAQ_web.pdf" download={true} target="_blank">
+							<Image src={require('@/assets/img/startup.png')} alt="Enline's brand" height={87} />
+						</Box>
 					</Stack>
 					<Stack align={'flex-start'}>
 						<Link href={'/company'}>Company</Link>
@@ -49,20 +30,26 @@ export const Footer = () => {
 						{/* <Link href={'/news'}>Newsroom</Link>
 						<Link href={'/careers'}>Careers</Link> */}
 					</Stack>
-					<Stack align={'center'}>
-						<Button size={'sm'} variant={'primary'}>
+					<Stack align={'center'} spacing={6}>
+						<Button
+							as={NextLink}
+							href={'https://questionnaire.enline-transmission.com/'}
+							target={'_blank'}
+							size={'sm'}
+							variant={'primary'}
+						>
 							Schedule a meeting
 						</Button>
 						<Stack direction={'row'} spacing={6}>
-							<SocialButton label={'Linkedin'} href={'#'}>
+							<Box as={NextLink} href={'https://www.linkedin.com/company/gml-enline/mycompany/'} target="_blank">
 								<FiLinkedin />
-							</SocialButton>
-							<SocialButton label={'YouTube'} href={'#'}>
+							</Box>
+							<Box as={NextLink} href={'https://www.youtube.com/@enlinesmartenergysolutions999'} target="_blank">
 								<FiYoutube />
-							</SocialButton>
-							<SocialButton label={'Instagram'} href={'#'}>
+							</Box>
+							<Box as={NextLink} href={'https://www.instagram.com/enlinesmartsolutions/'} target="_blank">
 								<FiInstagram />
-							</SocialButton>
+							</Box>
 						</Stack>
 					</Stack>
 				</SimpleGrid>

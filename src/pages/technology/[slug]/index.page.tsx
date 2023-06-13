@@ -4,6 +4,7 @@ import { CardCommon, ContainerMain, ListUseCases } from '@/components/Common';
 
 import { Box, Button, Flex, Grid, Heading, Stack, Text } from '@chakra-ui/react';
 import Image from 'next/image';
+import NextLink from 'next/link';
 import { useRouter } from 'next/router';
 
 export default function SlugTechnology() {
@@ -42,7 +43,7 @@ export default function SlugTechnology() {
 								<Text fontSize={'12px'} color={'#83919E'} fontWeight={700}>
 									Integrated with
 								</Text>
-								{TECHNOLOGY_DATA[slug]?.buttonList.map((item: { title: string; link: string }, index: number) => (
+								{TECHNOLOGY_DATA[slug]?.buttonList.map((item: { title: string; link: string; urlButton: string }, index: number) => (
 									<Button
 										key={index}
 										bgGradient={bgButtonGradient}
@@ -56,6 +57,8 @@ export default function SlugTechnology() {
 												<Image src={item.link} alt={item.title} />
 											</Flex>
 										}
+										as={NextLink}
+										href={item.urlButton}
 									>
 										{item.title}
 									</Button>
@@ -94,7 +97,13 @@ export default function SlugTechnology() {
 												</Heading>
 												<Text color={'purple.500'}>Book a demo today!</Text>
 											</Stack>
-											<Button size="xl" variant={'primary'}>
+											<Button
+												size="xl"
+												variant={'primary'}
+												as={NextLink}
+												href={'https://questionnaire.enline-transmission.com/'}
+												target={'_blank'}
+											>
 												Schedule a meeting
 											</Button>
 										</Flex>

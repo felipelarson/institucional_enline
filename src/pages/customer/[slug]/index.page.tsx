@@ -4,6 +4,7 @@ import { ContainerMain, TitleSection } from '@/components/Common';
 
 import { Box, Button, Card, Flex, Grid, Heading, Stack, Text } from '@chakra-ui/react';
 import Image from 'next/image';
+import NextLink from 'next/link';
 import { useRouter } from 'next/router';
 import { FiArrowRight } from 'react-icons/fi';
 
@@ -62,11 +63,20 @@ export default function Slug() {
 												<Image src={item.iconButton} alt={item.altButton} />
 											</Flex>
 										}
+										as={NextLink}
+										href={item.urlButton}
 									>
 										{item.textButton}
 									</Button>
 									<Text color={'white'}>{item.description}</Text>
-									<Button h={'40px'} w={'180px'} variant={'primary'} rightIcon={<FiArrowRight />}>
+									<Button
+										h={'40px'}
+										w={'180px'}
+										variant={'primary'}
+										rightIcon={<FiArrowRight />}
+										as={NextLink}
+										href={item.urlButton}
+									>
 										<Text fontSize={'xs'}>Explore to know more</Text>
 									</Button>
 								</Stack>
@@ -90,7 +100,14 @@ export default function Slug() {
 							</Heading>
 							<Text color={'purple.500'}>Request a demo today!</Text>
 						</Stack>
-						<Button size="xl" w={'205px'} variant={'primary'}>
+						<Button
+							size="xl"
+							w={'205px'}
+							variant={'primary'}
+							as={NextLink}
+							href={'https://questionnaire.enline-transmission.com/'}
+							target={'_blank'}
+						>
 							<Heading fontWeight={'bold'} as={'h2'} fontSize={'xl'}>
 								Schedule a meeting
 							</Heading>

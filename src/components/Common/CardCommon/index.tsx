@@ -11,6 +11,7 @@ import IconSolution from '@/assets/svg/icon_solution.svg';
 
 import { Card, CardHeader, CardBody, Flex, Box, Heading, Text, CardFooter, Button, Stack } from '@chakra-ui/react';
 import Image from 'next/image';
+import NextLink from 'next/link';
 
 export const CardCommon = ({ title, text, icons, number, button, ...props }: ICardCommonprops) => {
 	const ICONS: any = {
@@ -56,7 +57,14 @@ export const CardCommon = ({ title, text, icons, number, button, ...props }: ICa
 			</CardBody>
 			{button && (
 				<CardFooter>
-					<Button height={'55px'} variant={'primary'} flex={1}>
+					<Button
+						height={'55px'}
+						variant={'primary'}
+						flex={1}
+						as={NextLink}
+						href={'https://questionnaire.enline-transmission.com/'}
+						target={'_blank'}
+					>
 						{button}
 					</Button>
 				</CardFooter>

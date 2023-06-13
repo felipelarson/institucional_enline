@@ -173,7 +173,13 @@ export default function Slug() {
 									{SLUG_DATA[slug]?.subtitleCardCustomer}
 								</Text>
 							</Stack>
-							<Button size={'xl'} variant={'primary'}>
+							<Button
+								size={'xl'}
+								variant={'primary'}
+								as={NextLink}
+								href={'https://questionnaire.enline-transmission.com/'}
+								target={'_blank'}
+							>
 								<Heading as={'h2'} fontWeight={'bold'} fontSize={'18px'}>
 									Schedule a meeting
 								</Heading>

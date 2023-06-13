@@ -3,6 +3,7 @@ export interface ICustomer {
 	altButton: string;
 	textButton: string;
 	description: string;
+	urlButton: string;
 }
 
 export interface ISlugData {
