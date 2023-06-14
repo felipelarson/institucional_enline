@@ -89,6 +89,8 @@ export default function Slug() {
 											Suggest Solutions:
 										</Text>
 										<Button
+											as={NextLink}
+											href={item.urlFirstButton}
 											bgGradient={bgButtonGradient}
 											_hover={{ bg: bgButtonGradient }}
 											size={'degrade'}
@@ -111,6 +113,8 @@ export default function Slug() {
 											{item.textFirstButton}
 										</Button>
 										<Button
+											as={NextLink}
+											href={item.urlSecondButton}
 											bgGradient={bgButtonGradient}
 											_hover={{ bg: bgButtonGradient }}
 											size={'degrade'}

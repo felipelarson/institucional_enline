@@ -3,10 +3,12 @@ import { CARDVALUES } from './mock';
 import { CardCommon, ContainerMain, TitleSection } from '@/components/Common';
 
 import { Grid, Stack } from '@chakra-ui/react';
+import Image from 'next/image';
 
 export const ValuesEnline = () => {
 	return (
-		<ContainerMain>
+		<ContainerMain bg={'#F1F6FF'} position={'relative'}>
+			<Image src={require(`@/assets/svg/bg-line.svg`)} alt={'bg-line'} fill={true} style={{ objectFit: 'cover' }} />
 			<Stack spacing={12}>
 				<TitleSection
 					title={'Transform Your Network, Optimize Performance, and Enhance Safety!'}

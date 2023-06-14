@@ -1,10 +1,10 @@
 import { NavItem } from './types';
 
 export const NAV_ITEMS: Array<NavItem> = [
-	{
-		label: 'Home',
-		href: '/'
-	},
+	// {
+	// 	label: 'Home',
+	// 	href: '/'
+	// },
 	{
 		label: 'Company',
 		href: '/company'

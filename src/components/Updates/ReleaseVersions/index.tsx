@@ -22,13 +22,13 @@ const UpdateList = () => {
 	return (
 		<>
 			{RELEASE_VERSIONS_DATA.map((update, index) => (
-				<Stack key={index} spacing={10}>
-					<Text as={'b'} mt={5} fontSize={'lg'}>
+				<Stack key={index} spacing={2}>
+					<Text as={'b'} mt={3} fontSize={'lg'}>
 						{update.heading}
 					</Text>
-					<List spacing={10}>
+					<List>
 						{update.list.map((item, index) => (
-							<ListItem key={index} fontSize={'sm'}>
+							<ListItem key={index} fontSize={'sm'} mb={2} ml={3}>
 								<ListIcon
 									as={PlusSquareIcon}
 									color="purple.500"
@@ -36,7 +36,7 @@ const UpdateList = () => {
 									borderRadius={'2px'}
 									w={'10px'}
 									h={'10px'}
-									verticalAlign={'center'}
+									verticalAlign={'super'}
 								/>
 								{item}
 							</ListItem>

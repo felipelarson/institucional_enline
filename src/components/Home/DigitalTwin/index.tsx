@@ -54,7 +54,7 @@ export const DigitalTwin = () => {
 							</Button>
 						))}
 					</Stack>
-					<Flex maxW={740}>
+					<Flex maxW={740} mr={'-20px'} height={'fit-content'}>
 						<Image src={require(`@/assets/img/screen_${selectedButton}.png`)} alt={selectedButton} />
 					</Flex>
 				</Flex>
@@ -76,14 +76,7 @@ export const DigitalTwin = () => {
 						</Text>
 						, optimize energy assets, and ultimately improve the overall efficiency and reliability of your energy infrastructure.
 					</Text>
-					<Button
-						flex={1}
-						size="xl"
-						variant={'primary'}
-						as={NextLink}
-						href={'https://questionnaire.enline-transmission.com/'}
-						target={'_blank'}
-					>
+					<Button flex={1} variant={'hero'} as={NextLink} href={'https://questionnaire.enline-transmission.com/'} target={'_blank'}>
 						Schedule a meeting
 					</Button>
 				</Flex>

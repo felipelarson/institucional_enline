@@ -21,7 +21,7 @@ export const FAQ = () => {
 						{item.question}
 					</Text>
 					<List spacing={10} pb={5}>
-						<ListItem key={index} fontSize={'sm'} color={'#011F3B'}>
+						<ListItem key={index} fontSize={'sm'} color={'#011F3B'} mb={2} ml={3}>
 							<ListIcon
 								as={PlusSquareIcon}
 								color="purple.500"
@@ -29,7 +29,7 @@ export const FAQ = () => {
 								borderRadius={'2px'}
 								w={'10px'}
 								h={'10px'}
-								verticalAlign={'center'}
+								verticalAlign={'super'}
 							/>
 							{item.answer}
 						</ListItem>

@@ -59,7 +59,9 @@ export const SLUG_DATA: { [key: string]: ISlugData } = {
 				textFirstButton: 'Enline LiveView',
 				iconSecondButton: require('@/assets/svg/icon_predictpro.svg'),
 				altSecondButton: 'icon_predictpro',
-				textSecondButton: 'Enline PredictPro'
+				textSecondButton: 'Enline PredictPro',
+				urlFirstButton: '/solutions/liveview',
+				urlSecondButton: '/solutions/predictpro'
 			},
 			{
 				icons: 'electrical_box',
@@ -71,7 +73,9 @@ export const SLUG_DATA: { [key: string]: ISlugData } = {
 				textFirstButton: 'Enline LiveView',
 				iconSecondButton: require('@/assets/svg/icon_smartdesign.svg'),
 				altSecondButton: 'icon_smartdesign',
-				textSecondButton: 'Enline SmartDesign'
+				textSecondButton: 'Enline SmartDesign',
+				urlFirstButton: '/solutions/liveview',
+				urlSecondButton: '/solutions/smartdesign'
 			},
 			{
 				icons: 'distribution',
@@ -83,7 +87,9 @@ export const SLUG_DATA: { [key: string]: ISlugData } = {
 				textFirstButton: 'Enline LiveView',
 				iconSecondButton: require('@/assets/svg/icon_optimax.svg'),
 				altSecondButton: 'icon_optimax',
-				textSecondButton: 'Enline OptiMax'
+				textSecondButton: 'Enline OptiMax',
+				urlFirstButton: '/solutions/liveview',
+				urlSecondButton: '/solutions/optimax'
 			}
 		],
 		titleCardCustomer: 'Discover how Enline can transform your TSO operations.',
@@ -147,7 +153,9 @@ export const SLUG_DATA: { [key: string]: ISlugData } = {
 				textFirstButton: 'Enline LiveView',
 				iconSecondButton: require('@/assets/svg/icon_predictpro.svg'),
 				altSecondButton: 'icon_predictpro',
-				textSecondButton: 'Enline PredictPro'
+				textSecondButton: 'Enline PredictPro',
+				urlFirstButton: '/solutions/liveview',
+				urlSecondButton: '/solutions/predictpro'
 			},
 			{
 				icons: 'industry',
@@ -159,7 +167,9 @@ export const SLUG_DATA: { [key: string]: ISlugData } = {
 				textFirstButton: 'Enline OptiMax',
 				iconSecondButton: require('@/assets/svg/icon_safeguard.svg'),
 				altSecondButton: 'icon_safeguard',
-				textSecondButton: 'Enline SafeGuard'
+				textSecondButton: 'Enline SafeGuard',
+				urlFirstButton: '/solutions/liveview',
+				urlSecondButton: '/solutions/safeguard'
 			},
 			{
 				icons: 'distribution',
@@ -171,7 +181,9 @@ export const SLUG_DATA: { [key: string]: ISlugData } = {
 				textFirstButton: 'Enline LiveView',
 				iconSecondButton: require('@/assets/svg/icon_optimax.svg'),
 				altSecondButton: 'icon_optimax',
-				textSecondButton: 'Enline OptiMax'
+				textSecondButton: 'Enline OptiMax',
+				urlFirstButton: '/solutions/liveview',
+				urlSecondButton: '/solutions/optimax'
 			}
 		],
 		titleCardCustomer: 'Optimize your energy, boost efficiency and reduce costs.',
@@ -235,7 +247,9 @@ export const SLUG_DATA: { [key: string]: ISlugData } = {
 				textFirstButton: 'Enline LiveView',
 				iconSecondButton: require('@/assets/svg/icon_predictpro.svg'),
 				altSecondButton: 'icon_predictpro',
-				textSecondButton: 'Enline PredictPro'
+				textSecondButton: 'Enline PredictPro',
+				urlFirstButton: '/solutions/liveview',
+				urlSecondButton: '/solutions/predictpro'
 			},
 			{
 				icons: 'electrical_box',
@@ -247,7 +261,9 @@ export const SLUG_DATA: { [key: string]: ISlugData } = {
 				textFirstButton: 'Enline LiveView',
 				iconSecondButton: require('@/assets/svg/icon_smartdesign.svg'),
 				altSecondButton: 'icon_smartdesign',
-				textSecondButton: 'Enline SmartDesign'
+				textSecondButton: 'Enline SmartDesign',
+				urlFirstButton: '/solutions/liveview',
+				urlSecondButton: '/solutions/smartdesign'
 			},
 			{
 				icons: 'distribution',
@@ -259,7 +275,9 @@ export const SLUG_DATA: { [key: string]: ISlugData } = {
 				textFirstButton: 'Enline LiveView',
 				iconSecondButton: require('@/assets/svg/icon_optimax.svg'),
 				altSecondButton: 'icon_optimax',
-				textSecondButton: 'Enline OptiMax'
+				textSecondButton: 'Enline OptiMax',
+				urlFirstButton: '/solutions/liveview',
+				urlSecondButton: '/solutions/optimax'
 			}
 		],
 		titleCardCustomer: 'Elevate Your Predictive Capabilities with Enline PredictPro.',
@@ -323,7 +341,9 @@ export const SLUG_DATA: { [key: string]: ISlugData } = {
 				textFirstButton: 'Enline LiveView',
 				iconSecondButton: require('@/assets/svg/icon_predictpro.svg'),
 				altSecondButton: 'icon_predictpro',
-				textSecondButton: 'Enline PredictPro'
+				textSecondButton: 'Enline PredictPro',
+				urlFirstButton: '/solutions/liveview',
+				urlSecondButton: '/solutions/predictpro'
 			},
 			{
 				icons: 'electrical_box',
@@ -335,7 +355,9 @@ export const SLUG_DATA: { [key: string]: ISlugData } = {
 				textFirstButton: 'Enline LiveView',
 				iconSecondButton: require('@/assets/svg/icon_smartdesign.svg'),
 				altSecondButton: 'icon_smartdesign',
-				textSecondButton: 'Enline SmartDesign'
+				textSecondButton: 'Enline SmartDesign',
+				urlFirstButton: '/solutions/liveview',
+				urlSecondButton: '/solutions/smartdesign'
 			},
 			{
 				icons: 'distribution',
@@ -347,7 +369,9 @@ export const SLUG_DATA: { [key: string]: ISlugData } = {
 				textFirstButton: 'Enline LiveView',
 				iconSecondButton: require('@/assets/svg/icon_optimax.svg'),
 				altSecondButton: 'icon_optimax',
-				textSecondButton: 'Enline OptiMax'
+				textSecondButton: 'Enline OptiMax',
+				urlFirstButton: '/solutions/liveview',
+				urlSecondButton: '/solutions/optimax'
 			}
 		],
 		titleCardCustomer: 'Mitigate risks and ensure a safer, more reliable infrastructure.',
@@ -411,7 +435,9 @@ export const SLUG_DATA: { [key: string]: ISlugData } = {
 				textFirstButton: 'Enline LiveView',
 				iconSecondButton: require('@/assets/svg/icon_predictpro.svg'),
 				altSecondButton: 'icon_predictpro',
-				textSecondButton: 'Enline PredictPro'
+				textSecondButton: 'Enline PredictPro',
+				urlFirstButton: '/solutions/liveview',
+				urlSecondButton: '/solutions/predictpro'
 			},
 			{
 				icons: 'electrical_box',
@@ -423,7 +449,9 @@ export const SLUG_DATA: { [key: string]: ISlugData } = {
 				textFirstButton: 'Enline LiveView',
 				iconSecondButton: require('@/assets/svg/icon_smartdesign.svg'),
 				altSecondButton: 'icon_smartdesign',
-				textSecondButton: 'Enline SmartDesign'
+				textSecondButton: 'Enline SmartDesign',
+				urlFirstButton: '/solutions/liveview',
+				urlSecondButton: '/solutions/smartdesign'
 			},
 			{
 				icons: 'distribution',
@@ -435,7 +463,9 @@ export const SLUG_DATA: { [key: string]: ISlugData } = {
 				textFirstButton: 'Enline LiveView',
 				iconSecondButton: require('@/assets/svg/icon_optimax.svg'),
 				altSecondButton: 'icon_optimax',
-				textSecondButton: 'Enline OptiMax'
+				textSecondButton: 'Enline OptiMax',
+				urlFirstButton: '/solutions/liveview',
+				urlSecondButton: '/solutions/optimax'
 			}
 		],
 		titleCardCustomer: 'Plan for success with advanced simulation tools.',

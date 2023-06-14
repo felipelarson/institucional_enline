@@ -23,7 +23,7 @@ import {
 import Image from 'next/image';
 import NextLink from 'next/link';
 import { useRouter } from 'next/router';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export const Navbar = () => {
 	const { isOpen, onToggle } = useDisclosure();
@@ -93,7 +93,7 @@ export const Navbar = () => {
 const DesktopNav = () => {
 	const router = useRouter();
 	const [selected, setSelected] = useState(
-		router.pathname === '/' ? 'Home' : '/' + router.pathname.slice(1).charAt(0).toUpperCase() + router.pathname.slice(2)
+		router.asPath === '/' ? 'Home' : '/' + router.asPath.slice(1).charAt(0).toUpperCase() + router.asPath.slice(2)
 	);
 
 	const linkColor = useColorModeValue('gray.600', 'gray.200');
@@ -105,6 +105,11 @@ const DesktopNav = () => {
 	const handleSelected = (label: string) => {
 		setSelected(label);
 	};
+
+	useEffect(() => {
+		const path = router.asPath === '/' ? 'Home' : `/${router.asPath.slice(1).charAt(0).toUpperCase()}${router.asPath.slice(2)}`;
+		setSelected(path);
+	}, [router.asPath]);
 
 	return (
 		<Stack direction={'row'} spacing={4}>
@@ -119,13 +124,21 @@ const DesktopNav = () => {
 								fontSize={'sm'}
 								fontWeight={500}
 								color={
-									navItem.href === selected.toLocaleLowerCase() ? 'white' : navItem.href === '/solutions' ? 'purple.500' : linkColor
+									navItem.href !== undefined
+										? navItem.href === selected.toLocaleLowerCase() || router.asPath.startsWith(navItem.href.toLowerCase())
+											? 'white'
+											: navItem.href === '/solutions'
+											? 'purple.500'
+											: linkColor
+										: linkColor
 								}
 								bg={
-									navItem.href === selected.toLocaleLowerCase()
-										? 'purple.500'
-										: navItem.href === '/solutions'
-										? 'purple.100'
+									navItem.href !== undefined
+										? navItem.href === selected.toLocaleLowerCase() || router.asPath.startsWith(navItem.href.toLowerCase())
+											? 'purple.500'
+											: navItem.href === '/solutions'
+											? 'purple.100'
+											: linkBackground
 										: linkBackground
 								}
 								_hover={
@@ -166,7 +179,7 @@ const DesktopNav = () => {
 										<Flex direction={'column'} align={'flex-start'} justifyContent={'space-between'} h={'full'}>
 											<Text fontSize={'sm'}>
 												<Text as={'span'} color={'purple.500'}>
-													Explore Enline’s cutting-edge solutions
+													Explore Enline`s cutting-edge solutions
 												</Text>{' '}
 												designed to simplify energy infrastructure monitoring and maintenance.
 											</Text>

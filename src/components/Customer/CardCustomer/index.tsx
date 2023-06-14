@@ -9,7 +9,7 @@ export const CardCustomer = () => {
 	const bgButtonGradient = 'linear(to-r, #5F296D, #33296D)';
 
 	return (
-		<Grid gap={8} templateColumns={'repeat(3, 1fr)'} mt={20}>
+		<Grid gap={8} templateColumns={'repeat(auto-fit, minmax(330px, 1fr))'} mt={20}>
 			{CARD_CUSTUMER.map((item, index) => (
 				<Card key={index} px={4} py={5} bg={'white'} border={'1px solid #D8E1E9'} borderRadius={5}>
 					<Stack bg={'#F1F6FF'} p={4} borderRadius={5} mb={6} h={'250px'} justifyContent={'space-between'}>

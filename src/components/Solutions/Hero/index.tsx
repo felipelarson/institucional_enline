@@ -13,6 +13,8 @@ export const Hero = () => {
 				<Card key={index} bgGradient={'linear(106.68deg, #0E0E0F 5.44%, #33296D 106.62%)'} color={'white'} p={'48px'} borderRadius={'20px'}>
 					<Stack gap={12} justify={'flex-start'}>
 						<Button
+							as={NextLink}
+							href={item.href}
 							bgGradient={bgButtonGradient}
 							color={'white'}
 							rounded={'full'}

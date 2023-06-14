@@ -45,7 +45,7 @@ const Button = {
 			bg: 'purple.500',
 			color: 'white',
 			_hover: {
-				bg: 'purple.300'
+				bg: 'purple.600'
 			}
 		},
 		secondary: {
@@ -56,6 +56,18 @@ const Button = {
 				bg: 'purple.100'
 			},
 			maxW: '124px'
+		},
+		hero: {
+			color: 'white',
+			bg: 'purple.500',
+			p: '24px 16px',
+			w: 'fit-content',
+			fontSize: '18px',
+			fontWeight: '700',
+			h: '55px',
+			_hover: {
+				bg: 'purple.600'
+			}
 		}
 	}
 };

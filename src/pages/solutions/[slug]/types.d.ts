@@ -15,6 +15,8 @@ export interface ICardCustomer {
 	iconSecondButton: any;
 	altSecondButton: string;
 	textSecondButton: string;
+	urlFirstButton: string;
+	urlSecondButton: string;
 }
 
 export interface ISlugData {

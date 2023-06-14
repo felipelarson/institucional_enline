@@ -16,16 +16,26 @@ export default function Slug() {
 	return (
 		<>
 			<ContainerMain bg={'#F1F6FF'}>
-				<Stack gap={20}>
-					<Image src={SLUG_DATA[slug]?.urlBanner} alt={`Banner ${slug}`} />
-
-					<Flex border={'1px solid'} borderColor={'gray.200'} mt={24} p={'48px'} borderRadius={'20px'} gap={16} alignItems={'center'}>
+				<Stack gap={[10, 20]}>
+					<Flex width={'108%'} ml={'-4%'}>
+						<Image src={SLUG_DATA[slug]?.urlBanner} alt={`Banner ${slug}`} />
+					</Flex>
+					<Flex
+						border={'1px solid'}
+						borderColor={'gray.200'}
+						mt={24}
+						p={'48px'}
+						borderRadius={'20px'}
+						gap={16}
+						alignItems={'center'}
+						direction={['column-reverse', 'column-reverse', 'column-reverse', 'row']}
+					>
 						<Stack flex={1} gap={4}>
-							<Heading as={'h2'} fontSize={'lg'}>
+							<Heading as={'h2'} fontSize={['md', 'md', 'lg', 'lg']}>
 								{SLUG_DATA[slug]?.titleBanner}
 							</Heading>
 
-							<Text fontSize={'lg'}>{SLUG_DATA[slug]?.descriptionBanner}</Text>
+							<Text fontSize={['md', 'md', 'md', 'lg']}>{SLUG_DATA[slug]?.descriptionBanner}</Text>
 						</Stack>
 						<Box w={'full'} h={'full'} flex={1}>
 							<Image src={SLUG_DATA[slug]?.imageBanner} alt="" />
@@ -88,14 +98,16 @@ export default function Slug() {
 						justifyContent={'space-between'}
 						alignItems={'center'}
 						bgGradient={'linear(161.72deg, #F2F7FF 0.8%, #D7DEFA 88.27%)'}
-						px={16}
-						h={144}
+						px={'48px'}
+						py={'60px'}
+						h={'fit-content'}
 						gap={16}
 						border={'1px solid #D8E1E9'}
 						borderRadius={20}
+						direction={['column', 'column', 'column', 'row']}
 					>
 						<Stack>
-							<Heading fontWeight={'bold'} as={'h2'} fontSize={'3xl'}>
+							<Heading fontWeight={'bold'} as={'h2'} fontSize={['xl', '3xl']}>
 								{SLUG_DATA[slug]?.titleSchedule}
 							</Heading>
 							<Text color={'purple.500'}>Request a demo today!</Text>
@@ -108,7 +120,7 @@ export default function Slug() {
 							href={'https://questionnaire.enline-transmission.com/'}
 							target={'_blank'}
 						>
-							<Heading fontWeight={'bold'} as={'h2'} fontSize={'xl'}>
+							<Heading fontWeight={'bold'} as={'h2'} fontSize={['md', 'xl']}>
 								Schedule a meeting
 							</Heading>
 						</Button>

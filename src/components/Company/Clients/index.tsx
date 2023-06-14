@@ -1,5 +1,4 @@
-import { ContainerMain, TitleSection } from '@/components/Common';
-import { CarouselMap } from '@/components/Common';
+import { ContainerMain, TitleSection, CarouselMap } from '@/components/Common';
 
 import { Stack } from '@chakra-ui/react';
 import Image from 'next/image';

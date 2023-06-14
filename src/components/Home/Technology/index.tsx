@@ -14,7 +14,7 @@ export const Technology = () => {
 					subtitle="Innovative Energy Technology by Enline"
 					description="Transforming the Energy Sector with Cutting-Edge Solutions"
 				/>
-				<Stack>
+				<Stack spacing={10}>
 					{TECHNOLOGY_DATA.map((item, index) => (
 						<BannerWithScreen key={index} title={item.title} description={item.description} image={item.image} link={item.link} />
 					))}
@@ -31,10 +31,10 @@ export const Technology = () => {
 						w={'85%'}
 						gap={8}
 					>
-						<Text fontSize={'14px'} lineHeight={'19.6px'} fontWeight={'400'}>
+						<Text fontSize={'14px'} lineHeight={'19.6px'} fontWeight={'400'} flex={2}>
 							Experience the transformative power of Enline’s innovative technology. Dive deeper into our range of advanced solution.
 						</Text>
-						<Button as={NextLink} href={'/technology'} size="xl" variant={'primary'}>
+						<Button as={NextLink} href={'/technology'} variant={'hero'} flex={1}>
 							Technology by Enline
 						</Button>
 					</Flex>

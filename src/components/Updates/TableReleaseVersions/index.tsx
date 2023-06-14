@@ -13,21 +13,39 @@ export const TableReleaseVersions = () => {
 				</CardHeader>
 				<Divider />
 				<CardBody>
-					{/* {CARD_VIDEO_DATA.map((card, index) => (
-            <Text key={index} p={2} fontSize={'xs'} color={'gray.600'}>
-              <Link  href={`#${card.id}`}>{card.heading}</Link>
-            </Text>
-          ))} */}
-					<Text p={2} fontSize={'xs'} color={'gray.600'}>
-						<Button as={NextLink} href={'#ems_v2'}>
-							EMS V2.0
-						</Button>
-					</Text>
-					<Text p={2} fontSize={'xs'} color={'gray.600'}>
-						<Button as={NextLink} href={'#ems_v1'}>
-							EMS V1.0
-						</Button>
-					</Text>
+					<Button
+						as={NextLink}
+						href={'#ems_v2'}
+						w={'100%'}
+						px={3}
+						borderRadius={5}
+						justifyContent={'flex-start'}
+						fontSize={'xs'}
+						fontWeight={'medium'}
+						color={'gray.500'}
+						bg={'#F1F6FF'}
+						_hover={{ color: '#6D63EB', bg: 'white' }}
+						_focus={{ color: '#6D63EB', bg: 'white' }}
+					>
+						EMS V2.0
+					</Button>
+
+					<Button
+						as={NextLink}
+						href={'#ems_v1'}
+						w={'100%'}
+						px={3}
+						borderRadius={5}
+						justifyContent={'flex-start'}
+						fontSize={'xs'}
+						fontWeight={'medium'}
+						color={'gray.500'}
+						bg={'#F1F6FF'}
+						_hover={{ color: '#6D63EB', bg: 'white' }}
+						_focus={{ color: '#6D63EB', bg: 'white' }}
+					>
+						EMS V1.0
+					</Button>
 				</CardBody>
 			</Card>
 		</Box>
