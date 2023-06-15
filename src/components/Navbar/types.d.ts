@@ -3,5 +3,5 @@ export interface NavItem {
 	subLabel?: string;
 	children?: Array<NavItem>;
 	href?: string;
-	icon?: string;
+	icon?: any;
 }

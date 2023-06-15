@@ -21,16 +21,18 @@ export const DigitalTwin = () => {
 					description="Enline's Digital Twin solution is a state-of-the-art technology that provides an in-depth understanding of energy assets. The solution offers real-time data and critical insights for monitoring various electrical, mechanical, and thermal variables as:"
 				/>
 				<Flex justifyContent={'space-between'} direction={['column-reverse', 'column-reverse', 'column-reverse', 'row']}>
-					<Stack>
+					<Stack gap={2}>
 						{BUTTONS.map((button) => (
 							<Button
 								key={button.value}
 								display={'flex'}
 								justifyContent={'flex-start'}
 								rounded="full"
-								size={'lg'}
-								fontWeight="normal"
+								fontWeight={700}
+								fontSize={'sm'}
 								px={2}
+								h={'40px'}
+								w={'220px'}
 								colorScheme={selectedButton === button.value ? 'purple' : 'gray'}
 								bg={selectedButton === button.value ? 'purple.500' : 'white'}
 								color={selectedButton === button.value ? 'white' : 'gray.900'}

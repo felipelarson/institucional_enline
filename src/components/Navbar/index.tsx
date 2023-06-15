@@ -37,7 +37,7 @@ export const Navbar = () => {
 				py={{ base: 2 }}
 				px={{ base: 4 }}
 				align={'center'}
-				boxShadow={'md'}
+				boxShadow={'0px 5px 10px rgba(8, 29, 71, 0.05)'}
 			>
 				<Flex flex={{ base: 1, md: 'auto' }} ml={{ base: -2 }} display={{ base: 'flex', md: 'none' }}>
 					<IconButton
@@ -64,23 +64,24 @@ export const Navbar = () => {
 					</Flex>
 				</Flex>
 
-				{/* <Stack flex={{ base: 1, md: 0 }} justify={'flex-end'} direction={'row'} spacing={6}>
+				<Stack flex={{ base: 1, md: 0 }} justify={'flex-end'} direction={'row'} spacing={6}>
 					<Button
-						as={'a'}
+						as={NextLink}
+						href={'https://questionnaire.enline-transmission.com/'}
+						target={'_blank'}
 						display={{ base: 'none', md: 'inline-flex' }}
 						fontSize={'sm'}
 						fontWeight={600}
 						color={'white'}
 						bg={'green.300'}
-						href={'#'}
 						_hover={{
 							bg: 'green.400'
 						}}
 						rounded={'full'}
 					>
-						Preview Your Results
+						Schedule a meeting
 					</Button>
-				</Stack> */}
+				</Stack>
 			</Flex>
 
 			<Collapse in={isOpen} animateOpacity>
@@ -122,7 +123,7 @@ const DesktopNav = () => {
 								px={{ base: 4, md: 2 }}
 								href={navItem.href ?? '#'}
 								fontSize={'sm'}
-								fontWeight={500}
+								fontWeight={700}
 								color={
 									navItem.href !== undefined
 										? navItem.href === selected.toLocaleLowerCase() || router.asPath.startsWith(navItem.href.toLowerCase())
@@ -215,21 +216,7 @@ const DesktopSubNav = ({ label, href, subLabel, icon }: NavItem) => {
 		<Box role={'group'} display={'block'} p={18} rounded={'md'} bg={'#EFEEFC'} m={2}>
 			<Flex direction={'column'} align={'flex-start'} gap={4}>
 				<Flex color={'white'} rounded={'full'}>
-					<Button
-						display={'flex'}
-						justifyContent={'flex-start'}
-						rounded="full"
-						size="lg"
-						w={'full'}
-						fontWeight="normal"
-						px={2}
-						color={'white'}
-						bgGradient={'linear(to-r, #5F296D, #33296D)'}
-						_hover={{ bgGradient: 'linear(to-r, #5F296D, #33296D)', color: 'white' }}
-						leftIcon={<Image src={require(`@/assets/svg/${icon}.svg`)} alt={`${label} icon`} />}
-					>
-						{label}
-					</Button>
+					<Image src={icon} alt={`${label} icon`} />
 				</Flex>
 				<Text fontSize={'sm'}>{subLabel} </Text>
 				<Button

@@ -11,8 +11,8 @@ export const ValuesEnline = () => {
 			<Image src={require(`@/assets/svg/bg-line.svg`)} alt={'bg-line'} fill={true} style={{ objectFit: 'cover' }} />
 			<Stack spacing={12}>
 				<TitleSection
-					title={'Transform Your Network, Optimize Performance, and Enhance Safety!'}
-					subtitle={"Enline's values"}
+					title={"Enline's values"}
+					subtitle={'Transform Your Network, Optimize Performance, and Enhance Safety!'}
 					description={
 						'Discover the capabilities of Enline’s digital twin technology, designed to transform the way you monitor, maintain, and optimize your energy assets.'
 					}

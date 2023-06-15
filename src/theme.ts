@@ -33,9 +33,9 @@ const Button = {
 		},
 		degrade: {
 			h: '40px',
-			fontSize: 'md',
+			fontSize: 'sm',
+			fontWeight: 'bold',
 			w: '60%',
-			fontWeight: 'normal',
 			color: 'white',
 			rounded: 'full'
 		}

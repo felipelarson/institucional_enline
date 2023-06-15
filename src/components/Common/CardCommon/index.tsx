@@ -26,7 +26,7 @@ export const CardCommon = ({ title, text, icons, number, button, ...props }: ICa
 	};
 
 	return (
-		<Card bg={'white'} border={'1px solid #D8E1E9'} {...props}>
+		<Card bg={'#FAFAFF'} border={'1px solid #D8E1E9'} boxShadow={'none'} {...props}>
 			<CardHeader>
 				<Stack gap={4}>
 					{icons && <Image src={ICONS[icons]} alt={title} width={50} height={50} />}

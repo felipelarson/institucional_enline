@@ -2,6 +2,11 @@ import { ISlugData } from './types';
 
 export const SLUG_DATA: { [key: string]: ISlugData } = {
 	tso: {
+		bannerInitial: {
+			icon: require('@/assets/svg/icon_tower.svg'),
+			title: 'Empower Your Transmission System Operations.',
+			subtitle: 'Enhance grid management with Enline’s cutting-edge solutions '
+		},
 		urlBanner: require('@/assets/img/banner_tso.png'),
 		titleBanner: 'As a TSO, managing a complex and dynamic power grid is a critical responsibility.',
 		descriptionBanner:
@@ -33,6 +38,11 @@ export const SLUG_DATA: { [key: string]: ISlugData } = {
 		titleSchedule: 'Discover how Enline can transform your TSO operations.'
 	},
 	dso: {
+		bannerInitial: {
+			icon: require('@/assets/svg/icon_distribution.svg'),
+			title: 'Revolutionize Your Distribution Network.',
+			subtitle: 'Enhance grid management with Enline’s cutting-edge solutions '
+		},
 		urlBanner: require('@/assets/img/banner_dso.png'),
 		titleBanner: 'DSOs are responsible for maintaining a reliable and efficient distribution network.',
 		descriptionBanner:
@@ -64,6 +74,11 @@ export const SLUG_DATA: { [key: string]: ISlugData } = {
 		titleSchedule: 'Learn how Enline can elevate your DSO performance'
 	},
 	power_generation: {
+		bannerInitial: {
+			icon: require('@/assets/svg/icon_electrical_box.svg'),
+			title: 'Optimize Power Generation with Enline.',
+			subtitle: 'Harness the power of data-driven insights to maximize efficiency'
+		},
 		urlBanner: require('@/assets/img/banner_power_generation.png'),
 		titleBanner:
 			'In an increasingly competitive energy market, power generation companies must continuously improve their operations to stay ahead.',
@@ -96,6 +111,11 @@ export const SLUG_DATA: { [key: string]: ISlugData } = {
 		titleSchedule: 'Find out how Enline can boost your power generation efficiency'
 	},
 	risk_management: {
+		bannerInitial: {
+			icon: require('@/assets/svg/icon_tower.svg'),
+			title: 'Reinvent Risk Management in Energy.',
+			subtitle: 'Assess and mitigate risks with Enline’s state-of-the-art solutions'
+		},
 		urlBanner: require('@/assets/img/banner_risk_management.png'),
 		titleBanner: 'Effective risk management is crucial for energy companies and their insurers.',
 		descriptionBanner:
@@ -127,6 +147,11 @@ export const SLUG_DATA: { [key: string]: ISlugData } = {
 		titleSchedule: 'Uncover how Enline can redefine risk management for your business'
 	},
 	renewable_energy: {
+		bannerInitial: {
+			icon: require('@/assets/svg/icon_renewable.svg'),
+			title: 'Propel Your Renewable Energy Initiatives.',
+			subtitle: 'Accelerate the transition to clean energy with Enline’s solutions'
+		},
 		urlBanner: require('@/assets/img/banner_renewable_energy.png'),
 		titleBanner: 'Renewable energy providers play a crucial role in building a sustainable future.',
 		descriptionBanner:
@@ -158,6 +183,11 @@ export const SLUG_DATA: { [key: string]: ISlugData } = {
 		titleSchedule: 'Explore how Enline can advance your renewable energy goals'
 	},
 	energy_research: {
+		bannerInitial: {
+			icon: require('@/assets/svg/icon_tower.svg'),
+			title: "Fuel Your Energy Research with Enline's Technology .",
+			subtitle: 'Harness the power of data for groundbreaking discoveries'
+		},
 		urlBanner: require('@/assets/img/banner_energy_research.png'),
 		titleBanner: 'As an R&D institution, you strive to advance the state of the art in energy technology.',
 		descriptionBanner:
@@ -189,6 +219,11 @@ export const SLUG_DATA: { [key: string]: ISlugData } = {
 		titleSchedule: 'Unleash the potential of Enline for your R&D projects'
 	},
 	electric_mobility: {
+		bannerInitial: {
+			icon: require('@/assets/svg/icon_electric.svg'),
+			title: 'Drive the Future of Electric Mobility',
+			subtitle: 'Boost the reliability and efficiency of your EV infrastructure with Enline'
+		},
 		urlBanner: require('@/assets/img/banner_electric_mobility.png'),
 		titleBanner: 'As EV adoption accelerates, reliable and efficient charging infrastructure is essential.',
 		descriptionBanner:
@@ -220,6 +255,11 @@ export const SLUG_DATA: { [key: string]: ISlugData } = {
 		titleSchedule: 'Learn how Enline can supercharge your EV infrastructure'
 	},
 	industry: {
+		bannerInitial: {
+			icon: require('@/assets/svg/icon_industry.svg'),
+			title: 'Revolutionize Energy Management in Industrial and Mining Operations',
+			subtitle: 'Leverage cutting-edge technology for sustainable and efficient energy solutions'
+		},
 		urlBanner: require('@/assets/img/banner_industrial.png'),
 		titleBanner: 'In the demanding world of industry and mining, efficient energy management is crucial for operational success.',
 		descriptionBanner:
@@ -251,6 +291,11 @@ export const SLUG_DATA: { [key: string]: ISlugData } = {
 		titleSchedule: 'Discover how Enline can transform your industry and mining energy management'
 	},
 	operations: {
+		bannerInitial: {
+			icon: require('@/assets/svg/icon_tower.svg'),
+			title: 'Transform O&M Services with Enline Technology',
+			subtitle: 'Drive efficiency and extend asset life through data-driven strategies'
+		},
 		urlBanner: require('@/assets/img/banner_operations.png'),
 		titleBanner:
 			'As the energy sector evolves, Operations & Maintenance (O&M) companies must adapt their services to deliver exceptional results.',

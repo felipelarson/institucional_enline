@@ -19,8 +19,14 @@ export const Hero = () => {
 
 			<ContainerMain zIndex={2}>
 				<Stack spacing={12} w={{ base: '80%', md: '80%' }} align={'flex-start'}>
-					<Box boxShadow={'lg'} p={'36px'} border={'1px solid #D8E1E9'} bgGradient={'linear(to-r, white, gray.50)'} borderRadius={'md'}>
-						<Heading as="h1" size="3xl" fontWeight="bold" textAlign={['center', 'center', 'left', 'left']}>
+					<Box
+						boxShadow={'0px 20px 40px rgba(8, 29, 71, 0.05)'}
+						p={'36px'}
+						border={'1px solid #D8E1E9'}
+						bgGradient={'linear(131.85deg, #FFFFFF 0.5%, #EBF3FF 100.67%)'}
+						borderRadius={'5px'}
+					>
+						<Heading as={'h2'} fontSize={'42px'} fontWeight="bold" textAlign={['center', 'center', 'left', 'left']} lineHeight={'100%'}>
 							Energy monitoring made <br />
 							<Text as={'span'} color={'purple.500'}>
 								{' '}
@@ -28,7 +34,7 @@ export const Hero = () => {
 							</Text>
 						</Heading>
 					</Box>
-					<Text color="gray.500" fontSize="xl" textAlign={['center', 'center', 'left', 'left']} maxW={350}>
+					<Text color="gray.500" fontSize={'18px'} textAlign={['center', 'center', 'left', 'left']} maxW={350} lineHeight={'140%'}>
 						Transform your energy infrastructure monitoring and maintenance with
 						<Text as={'span'} color={'purple.500'} fontWeight={500}>
 							{' '}
@@ -53,19 +59,23 @@ export const Hero = () => {
 					</Stack>
 				</Stack>
 			</ContainerMain>
-			<Box
-				position={'absolute'}
-				top={0}
-				right={0}
-				w={{ base: '60%', sm: '100%', md: '60%' }}
-				bgImage={`url('/gif/img_hero_enline.gif')`}
-				bgSize={'cover'}
-				bgRepeat={'no-repeat'}
-				bgPos={'center'}
-				height={'100%'}
-				width={'full'}
-				zIndex={1}
-			/>
+			<video
+				autoPlay
+				muted
+				loop
+				playsInline
+				style={{
+					position: 'absolute',
+					top: 0,
+					left: '40%',
+					width: '100%',
+					height: '100%',
+					zIndex: 1,
+					objectFit: 'cover'
+				}}
+			>
+				<source src="/gif/enline-bg.mp4" type="video/mp4" />
+			</video>
 		</Flex>
 	);
 };

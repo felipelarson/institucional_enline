@@ -17,9 +17,38 @@ export default function Slug() {
 		<>
 			<ContainerMain bg={'#F1F6FF'}>
 				<Stack gap={[10, 20]}>
-					<Flex width={'108%'} ml={'-4%'}>
-						<Image src={SLUG_DATA[slug]?.urlBanner} alt={`Banner ${slug}`} />
-					</Flex>
+					<Box
+						bgGradient={'linear(106.68deg, #0E0E0F 5.44%, #5C296D 106.62%)'}
+						p={'48px'}
+						border={'1px solid #F1F6FF'}
+						boxShadow={'0px 20px 40px rgba(8, 29, 71, 0.05)'}
+						borderRadius={'20px'}
+						position={'relative'}
+					>
+						<Image src={require(`@/assets/svg/bg_line_brand.svg`)} alt={`Banner ${slug}`} fill={true} style={{ objectFit: 'cover' }} />
+						<Stack color={'white'} gap={'48px'}>
+							<Box
+								w={'67px'}
+								h={'67px'}
+								bg={'white'}
+								border={'1.5px solid #DDF3F9'}
+								boxShadow={'0px 20px 40px rgba(8, 29, 71, 0.05)'}
+								rounded={'full'}
+								zIndex={1}
+							>
+								<Flex alignItems={'center'} justifyContent={'center'} w={'100%'} h={'100%'}>
+									<Image src={SLUG_DATA[slug]?.bannerInitial.icon} alt={`Banner ${slug}`} style={{ objectFit: 'contain' }} />
+								</Flex>
+							</Box>
+							<Heading as={'h2'} fontSize={'32px'} fontWeight={700} lineHeight={'100%'} maxW={'470px'}>
+								{SLUG_DATA[slug]?.bannerInitial.title}
+							</Heading>
+							<Text fontSize={'20px'} fontWeight={400} lineHeight={'25px'}>
+								{SLUG_DATA[slug]?.bannerInitial.subtitle}
+							</Text>
+						</Stack>
+					</Box>
+
 					<Flex
 						border={'1px solid'}
 						borderColor={'gray.200'}

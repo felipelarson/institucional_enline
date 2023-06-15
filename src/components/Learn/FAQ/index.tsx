@@ -5,12 +5,12 @@ import { Heading, List, ListIcon, ListItem, Stack, Text } from '@chakra-ui/react
 
 export const FAQ = () => {
 	return (
-		<Stack id="faq">
+		<Stack id="faq" maxW={'681px'}>
 			<Text as={'b'} fontSize={'lg'} color={'#6D63EB'}>
 				FAQ
 			</Text>
 			<Heading fontSize={'3xl'}>Frequently Asked Questions (FAQs)</Heading>
-			<Text fontSize={'lg'} pb={5} color={'#011F3B'}>
+			<Text fontSize={'sm'} pb={5} color={'#011F3B'}>
 				We`ve curated this list to provide you with quick and accurate information, helping you navigate and make the most of our innovative
 				energy management technology. If you have further questions or need personalized assistance, please don`t hesitate to reach out to our
 				support team.
