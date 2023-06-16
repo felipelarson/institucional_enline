@@ -1,8 +1,10 @@
 import { SLUG_DATA } from './mock';
 
 import { CardCommon, ContainerMain, ListUseCases, TitleSection } from '@/components/Common';
+import { SlugHero } from '@/components/Solutions/Slug/Hero';
 
-import { Box, Button, Card, Flex, Grid, Heading, Stack, Text } from '@chakra-ui/react';
+import { ChevronRightIcon } from '@chakra-ui/icons';
+import { Box, Button, Card, Flex, Grid, Heading, Stack, Text, Breadcrumb, BreadcrumbItem, BreadcrumbLink } from '@chakra-ui/react';
 import Image from 'next/image';
 import NextLink from 'next/link';
 import { useRouter } from 'next/router';
@@ -17,11 +19,30 @@ export default function Slug() {
 	return (
 		<>
 			<ContainerMain bg={'#F1F6FF'}>
-				<Stack gap={20}>
+				<Breadcrumb spacing="2px" separator={<ChevronRightIcon color="gray.500" />} mb={4} color={'gray'} fontWeight={700} fontSize={'12px'}>
+					<BreadcrumbItem>
+						<BreadcrumbLink href="/">Home</BreadcrumbLink>
+					</BreadcrumbItem>
+
+					<BreadcrumbItem>
+						<BreadcrumbLink href="/solutions">Solutions</BreadcrumbLink>
+					</BreadcrumbItem>
+
+					<BreadcrumbItem isCurrentPage>
+						<BreadcrumbLink href="#">
+							{slug
+								?.split('_')
+								.map((item) => item.charAt(0).toUpperCase() + item.slice(1))
+								.join(' ')}
+						</BreadcrumbLink>
+					</BreadcrumbItem>
+				</Breadcrumb>
+				<Stack gap={5}>
 					<Flex width={'108%'} ml={'-4%'}>
 						<Image src={SLUG_DATA[slug]?.urlBanner} alt={`Banner ${slug}`} />
+						{/* <SlugHero /> */}
 					</Flex>
-					<Text maxW={'80%'} fontSize={'18px'} fontWeight={400}>
+					<Text maxW={'80%'} fontSize={'18px'} fontWeight={400} pb={'16'}>
 						{SLUG_DATA[slug]?.description}
 					</Text>
 

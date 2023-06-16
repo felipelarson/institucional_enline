@@ -2,6 +2,15 @@ import { ISlugData } from './types';
 
 export const SLUG_DATA: { [key: string]: ISlugData } = {
 	liveview: {
+		hero: {
+			iconButton: require('@/assets/svg/icon_liveview.svg'),
+			textButton: 'Enline LiveView',
+			title: 'Instant Asset Insight and Asset Visibility ',
+			titleDestak: 'at Your Fingertips',
+			description: 'Real-time monitoring without no hardware required',
+			imgNotebook: require('@/assets/img/notebook.png'),
+			imgScreen: require('@/assets/img/solution_liveview.png')
+		},
 		urlBanner: require('@/assets/img/banner_liveview.png'),
 		description:
 			'Enline LiveView brings the power of sensorless digital twin technology to monitor your energy assets in real-time. With no need for additional hardware or fieldwork, LiveView provides instant access to critical data, streamlining decision-making and improving operational efficiency.',
@@ -96,6 +105,15 @@ export const SLUG_DATA: { [key: string]: ISlugData } = {
 		subtitleCardCustomer: 'Request a demo today!'
 	},
 	optimax: {
+		hero: {
+			iconButton: require('@/assets/svg/icon_optimax.svg'),
+			textButton: 'Enline OptiMax',
+			title: 'Maximize Your Energy ',
+			titleDestak: 'Infrastructure’s Performance',
+			description: 'Drive efficiency, reduce costs ',
+			imgNotebook: require('@/assets/img/notebook.png'),
+			imgScreen: require('@/assets/img/solution_optimax.png')
+		},
 		urlBanner: require('@/assets/img/banner_optimax.png'),
 		description:
 			'Enline OptiMax is designed to ensure your energy infrastructure operates at peak efficiency. By reducing energy losses and minimizing costs, OptiMax helps you optimize asset performance, enabling a more sustainable and cost-effective energy management approach.',
@@ -190,6 +208,15 @@ export const SLUG_DATA: { [key: string]: ISlugData } = {
 		subtitleCardCustomer: 'Start Maximizing Efficiency Now.'
 	},
 	predictpro: {
+		hero: {
+			iconButton: require('@/assets/svg/icon_predictpro.svg'),
+			textButton: 'Enline PredictPro',
+			title: 'AI-Driven Predictive Maintenance ',
+			titleDestak: 'for Energy Assets',
+			description: 'Stay ahead with proactive insights ',
+			imgNotebook: require('@/assets/img/notebook.png'),
+			imgScreen: require('@/assets/img/solution_predictpro.png')
+		},
 		urlBanner: require('@/assets/img/banner_predictpro.png'),
 		description:
 			'Enline PredictPro empowers your organization with advanced AI-driven predictive analytics, enabling you to forecast potential issues, optimize performance, and make informed decisions for proactive maintenance. Say goodbye to costly surprises and confidently manage your energy infrastructure.',
@@ -284,6 +311,15 @@ export const SLUG_DATA: { [key: string]: ISlugData } = {
 		subtitleCardCustomer: 'Request a demo today!'
 	},
 	safeguard: {
+		hero: {
+			iconButton: require('@/assets/svg/icon_safeguard.svg'),
+			textButton: 'Enline SafeGuard',
+			title: 'Comprehensive Risk Mitigation for ',
+			titleDestak: 'Energy Networks',
+			description: 'Protecting your assets, ensuring reliability',
+			imgNotebook: require('@/assets/img/notebook.png'),
+			imgScreen: require('@/assets/img/solution_safeguard.png')
+		},
 		urlBanner: require('@/assets/img/banner_safeguard.png'),
 		description:
 			'Enline SafeGuard provides robust risk mitigation strategies to reduce the risk of wildfires, equipment failure, and other hazards. By enhancing the safety and reliability of your energy network, SafeGuard ensures uninterrupted service and peace of mind for your organization.',
@@ -378,6 +414,15 @@ export const SLUG_DATA: { [key: string]: ISlugData } = {
 		subtitleCardCustomer: 'Secure Your Network Today.'
 	},
 	smartdesign: {
+		hero: {
+			iconButton: require('@/assets/svg/icon_smartdesign.svg'),
+			textButton: 'Enline SmartDesign',
+			title: 'Intelligent Energy Project ',
+			titleDestak: 'Design & Simulation',
+			description: 'Plan with precision, execute with confidence',
+			imgNotebook: require('@/assets/img/notebook.png'),
+			imgScreen: require('@/assets/img/solution_smartdesign.png')
+		},
 		urlBanner: require('@/assets/img/banner_smartdesign.png'),
 		description:
 			'Enline SmartDesign offers advanced simulation tools for planning and designing energy projects with confidence. By considering millions of possible scenarios, SmartDesign helps you make data-driven decisions, streamline project execution, and reduce uncertainties in your energy infrastructure investments.',

@@ -19,7 +19,18 @@ export interface ICardCustomer {
 	urlSecondButton: string;
 }
 
+export interface IHero {
+	iconButton: any;
+	textButton: string;
+	title: string;
+	titleDestak: string;
+	description: string;
+	imgNotebook: any;
+	imgScreen: any;
+}
+
 export interface ISlugData {
+	hero: IHero;
 	urlBanner: any;
 	description: string;
 	cardList: ICard[];

@@ -22,7 +22,7 @@ export const Customer = () => {
 				<Flex gap={4} direction={['column', 'column', 'column', 'row']}>
 					{CARDCUSTUMER.map((item, index) => (
 						<Card key={index} px={4} py={5} bg={'white'} border={'1px solid #D8E1E9'} borderRadius={5}>
-							<Stack bg={'#F1F6FF'} p={4} borderRadius={5} mb={6} h={'250px'} justifyContent={'space-between'}>
+							<Stack bg={'#F1F6FF'} p={4} borderRadius={5} mb={6} h={'200px'} justifyContent={'space-between'}>
 								<Box
 									bg={'white'}
 									h={50}
@@ -35,14 +35,16 @@ export const Customer = () => {
 										<Image src={require(`@/assets/svg/icon_${item.icons}.svg`)} alt={item.icons} />
 									</Flex>
 								</Box>
-								<Heading as="h2" size={'md'} fontSize={'lg'}>
+								<Text fontSize={'lg'} fontWeight={700} lineHeight={'140%'} maxW={'240px'}>
 									{item.title}
-								</Heading>
-								<Text>{item.subtitle}</Text>
+								</Text>
+								<Text fontSize={'sm'} fontWeight={400} lineHeight={'140%'} maxW={'240px'}>
+									{item.subtitle}
+								</Text>
 							</Stack>
 							<Stack gap={6}>
 								<Stack justifyContent={'flex-start'}>
-									<Text color={'gray.500'} fontWeight={'bold'}>
+									<Text color={'gray.500'} fontSize={'12px'} lineHeight={'140%'} fontWeight={'bold'}>
 										Suggest Solutions:
 									</Text>
 									<Button

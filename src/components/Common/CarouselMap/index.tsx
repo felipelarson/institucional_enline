@@ -1,4 +1,5 @@
-import { Box, Flex, Heading, Image, Stack } from '@chakra-ui/react';
+import { Box, Flex, Stack, Text } from '@chakra-ui/react';
+import Image from 'next/image';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
@@ -27,22 +28,16 @@ interface IMyCarousel {
 export const CarouselMap = ({ location }: IMyCarousel) => {
 	const cards = [
 		{
-			image: 'https://picsum.photos/id/1/122/54'
+			image: require('@/assets/img/client_transelec.png')
 		},
 		{
-			image: 'https://picsum.photos/id/2/122/54'
+			image: require('@/assets/img/client_mocambique.png')
 		},
 		{
-			image: 'https://picsum.photos/id/3/122/54'
+			image: require('@/assets/img/client_intertechne.png')
 		},
 		{
-			image: 'https://picsum.photos/id/4/122/54'
-		},
-		{
-			image: 'https://picsum.photos/id/5/122/54'
-		},
-		{
-			image: 'https://picsum.photos/id/6/122/54'
+			image: require('@/assets/img/client_coes.png')
 		}
 	];
 
@@ -86,9 +81,9 @@ export const CarouselMap = ({ location }: IMyCarousel) => {
 			bottom={locationCarousel[location]?.bottom}
 			right={locationCarousel[location]?.right}
 		>
-			<Heading as="h2" fontSize={'2xl'} mb={3}>
+			<Text fontSize={'sm'} fontWeight={700} lineHeight={'140%'} color={'black'} mb={3}>
 				{locationCarousel[location]?.title}
-			</Heading>
+			</Text>
 			<Carousel
 				responsive={responsive}
 				infinite={true}
@@ -99,7 +94,7 @@ export const CarouselMap = ({ location }: IMyCarousel) => {
 				{cards.map((url, index) => (
 					<Box bg={'white'} key={index} mx={2} border={'0.72px solid #D8E1E9'} p={'11px'} borderRadius={'3.6px'}>
 						<Flex height={'54px'} width={'122px'} position={'relative'}>
-							<Image src={url?.image} alt={'client'} />
+							<Image src={url.image} alt={'client'} fill={true} style={{ objectFit: 'contain' }} />
 						</Flex>
 					</Box>
 				))}

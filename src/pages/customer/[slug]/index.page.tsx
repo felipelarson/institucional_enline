@@ -2,7 +2,8 @@ import { SLUG_DATA } from './mock';
 
 import { ContainerMain, TitleSection } from '@/components/Common';
 
-import { Box, Button, Card, Flex, Grid, Heading, Stack, Text } from '@chakra-ui/react';
+import { ChevronRightIcon } from '@chakra-ui/icons';
+import { Box, Button, Card, Flex, Grid, Heading, Stack, Text, Breadcrumb, BreadcrumbItem, BreadcrumbLink } from '@chakra-ui/react';
 import Image from 'next/image';
 import NextLink from 'next/link';
 import { useRouter } from 'next/router';
@@ -16,6 +17,24 @@ export default function Slug() {
 	return (
 		<>
 			<ContainerMain bg={'#F1F6FF'}>
+				<Breadcrumb spacing="2px" separator={<ChevronRightIcon color="gray.500" />} mb={4} color={'gray'} fontWeight={700} fontSize={'12px'}>
+					<BreadcrumbItem>
+						<BreadcrumbLink href="/">Home</BreadcrumbLink>
+					</BreadcrumbItem>
+
+					<BreadcrumbItem>
+						<BreadcrumbLink href="/customer">Customer Segments</BreadcrumbLink>
+					</BreadcrumbItem>
+
+					<BreadcrumbItem isCurrentPage>
+						<BreadcrumbLink href="#">
+							{slug
+								?.split('_')
+								.map((item) => item.charAt(0).toUpperCase() + item.slice(1))
+								.join(' ')}
+						</BreadcrumbLink>
+					</BreadcrumbItem>
+				</Breadcrumb>
 				<Stack gap={[10, 20]}>
 					<Box
 						bgGradient={'linear(106.68deg, #0E0E0F 5.44%, #5C296D 106.62%)'}

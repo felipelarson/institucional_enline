@@ -2,7 +2,8 @@ import { TECHNOLOGY_DATA } from './technologyData';
 
 import { CardCommon, ContainerMain, ListUseCases } from '@/components/Common';
 
-import { Box, Button, Flex, Grid, Heading, Stack, Text } from '@chakra-ui/react';
+import { ChevronRightIcon } from '@chakra-ui/icons';
+import { Box, Breadcrumb, BreadcrumbItem, BreadcrumbLink, Button, Flex, Grid, Heading, Stack, Text } from '@chakra-ui/react';
 import Image from 'next/image';
 import NextLink from 'next/link';
 import { useRouter } from 'next/router';
@@ -16,6 +17,25 @@ export default function SlugTechnology() {
 	return (
 		<>
 			<ContainerMain bg={'#F1F6FF'}>
+				<Breadcrumb spacing="2px" separator={<ChevronRightIcon color="gray.500" />} mb={0} color={'gray'} fontWeight={700} fontSize={'12px'}>
+					<BreadcrumbItem>
+						<BreadcrumbLink href="/">Home</BreadcrumbLink>
+					</BreadcrumbItem>
+
+					<BreadcrumbItem>
+						<BreadcrumbLink href="/technology">Technology</BreadcrumbLink>
+					</BreadcrumbItem>
+
+					<BreadcrumbItem isCurrentPage>
+						<BreadcrumbLink href="#">
+							{slug
+								?.split('_')
+								.map((item) => item.charAt(0).toUpperCase() + item.slice(1))
+								.join(' ')}
+						</BreadcrumbLink>
+					</BreadcrumbItem>
+				</Breadcrumb>
+
 				<Stack gap={20}>
 					<Flex width={'108%'} ml={'-4%'}>
 						<Image src={TECHNOLOGY_DATA[slug]?.urlBanner} alt={`Banner ${slug}`} />
