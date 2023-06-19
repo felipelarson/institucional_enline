@@ -46,7 +46,7 @@ export default function SlugTechnology() {
 
 					<Grid templateColumns={'repeat(auto-fit, minmax(200px, 1fr))'} gap={10}>
 						{TECHNOLOGY_DATA[slug]?.cardList.map((item: { icon: string; title: string; text: string }, index: number) => (
-							<CardCommon key={index} icons={item.icon} title={item.title} text={item.text} />
+							<CardCommon key={index} icons={item.icon} title={item.title} text={item.text} boxShadow={'none'} />
 						))}
 					</Grid>
 					<Box bg={'white'} border={'1px solid #D8E1E9'} w={'100%'} p={'32px 24px'} borderRadius={'5px'}>

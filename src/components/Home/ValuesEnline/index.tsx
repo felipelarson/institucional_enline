@@ -8,7 +8,11 @@ import Image from 'next/image';
 export const ValuesEnline = () => {
 	return (
 		<ContainerMain bg={'#F1F6FF'} position={'relative'}>
-			<Image src={require(`@/assets/svg/bg-line.svg`)} alt={'bg-line'} fill={true} style={{ objectFit: 'cover' }} />
+			<Image
+				src={require(`@/assets/svg/bg-line.svg`)}
+				alt={'bg-line'}
+				style={{ objectFit: 'cover', position: 'absolute', height: '90%', width: '100%', top: 0, left: 0 }}
+			/>
 			<Stack spacing={12}>
 				<TitleSection
 					title={"Enline's values"}

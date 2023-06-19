@@ -1,7 +1,6 @@
 import { SLUG_DATA } from './mock';
 
 import { CardCommon, ContainerMain, ListUseCases, TitleSection } from '@/components/Common';
-import { SlugHero } from '@/components/Solutions/Slug/Hero';
 
 import { ChevronRightIcon } from '@chakra-ui/icons';
 import { Box, Button, Card, Flex, Grid, Heading, Stack, Text, Breadcrumb, BreadcrumbItem, BreadcrumbLink } from '@chakra-ui/react';
@@ -53,8 +52,21 @@ export default function Slug() {
 					</Grid>
 				</Stack>
 			</ContainerMain>
-			<ContainerMain bgGradient={'linear(293.83deg, #D9E0FB 0%, #FFFFFF 100%)'} position={'relative'}>
-				{/* <Image src={require(`@/assets/svg/bg-line.svg`)} alt={'bg-line'} fill={true} style={{ objectFit: 'contain' }} /> */}
+			<ContainerMain bgGradient={'linear(293.83deg, #D9E0FB 0%, #FFFFFF 100%)'} position={'relative'} zIndex={-1}>
+				<Image
+					src={require(`@/assets/svg/bg-line.svg`)}
+					alt={'bg-line'}
+					style={{
+						objectFit: 'cover',
+						objectPosition: 'center',
+						zIndex: -1,
+						position: 'absolute',
+						top: 0,
+						left: 0,
+						height: '45%',
+						width: '100%'
+					}}
+				/>
 				<Stack gap={20}>
 					<TitleSection
 						title={SLUG_DATA[slug]?.titleSection as string}

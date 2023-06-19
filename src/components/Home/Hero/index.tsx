@@ -15,7 +15,11 @@ export const Hero = () => {
 			minH={'100vh'}
 			position={'relative'}
 		>
-			<Image src={require(`@/assets/svg/bg-line.svg`)} alt={'bg-line'} fill={true} style={{ objectFit: 'cover' }} />
+			<Image
+				src={require(`@/assets/svg/bg-line.svg`)}
+				alt={'bg-line'}
+				style={{ objectFit: 'cover', position: 'absolute', top: 0, left: 0, height: '90%', width: '100%' }}
+			/>
 
 			<ContainerMain zIndex={2}>
 				<Stack spacing={12} w={{ base: '80%', md: '80%' }} align={'flex-start'}>

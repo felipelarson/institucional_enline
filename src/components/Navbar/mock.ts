@@ -60,13 +60,13 @@ export const NAV_ITEMS: Array<NavItem> = [
 	{
 		label: ' Updates',
 		href: '/updates'
-	}
+	},
 	// {
 	// 	label: 'Newsroom',
 	// 	href: '/newsroom'
 	// },
-	// {
-	// 	label: 'Careers',
-	// 	href: '/careers'
-	// }
+	{
+		label: 'Careers',
+		href: '/careers'
+	}
 ];

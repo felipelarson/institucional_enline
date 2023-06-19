@@ -21,16 +21,9 @@ export const Customer = () => {
 
 				<Flex gap={4} direction={['column', 'column', 'column', 'row']}>
 					{CARDCUSTUMER.map((item, index) => (
-						<Card key={index} px={4} py={5} bg={'white'} border={'1px solid #D8E1E9'} borderRadius={5}>
+						<Card key={index} px={4} py={5} bg={'white'} border={'1px solid #D8E1E9'} borderRadius={5} boxShadow={'none'}>
 							<Stack bg={'#F1F6FF'} p={4} borderRadius={5} mb={6} h={'200px'} justifyContent={'space-between'}>
-								<Box
-									bg={'white'}
-									h={50}
-									w={50}
-									rounded={'full'}
-									border={'1px solid #D8E1E9'}
-									boxShadow={'0px 20px 40px rgba(8, 29, 71, 0.05)'}
-								>
+								<Box bg={'white'} h={50} w={50} rounded={'full'} border={'1px solid #D8E1E9'}>
 									<Flex justifyContent={'center'} alignItems={'center'} h={'100%'}>
 										<Image src={require(`@/assets/svg/icon_${item.icons}.svg`)} alt={item.icons} />
 									</Flex>
