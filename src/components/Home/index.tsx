@@ -5,3 +5,4 @@ export * from './HowToStart';
 export * from './Technology';
 export * from './Customer';
 export * from './ClientsGlobe';
+export * from './HeroMibile';

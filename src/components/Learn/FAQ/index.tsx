@@ -5,7 +5,7 @@ import { Heading, List, ListIcon, ListItem, Stack, Text } from '@chakra-ui/react
 
 export const FAQ = () => {
 	return (
-		<Stack id="faq" maxW={'681px'}>
+		<Stack id="faq" maxW={['350px', '300px', '300px', '581px', '621px']}>
 			<Text as={'b'} fontSize={'lg'} color={'#6D63EB'}>
 				FAQ
 			</Text>

@@ -2,20 +2,101 @@ import { SLUG_DATA } from './careersData';
 
 import { ContainerMain } from '@/components/Common';
 
-import { Box, Button, Card, Flex, Grid, Heading, Link, Stack, Text } from '@chakra-ui/react';
+import { Box, Button, Card, Flex, Grid, Heading, Link, Stack, Text, useBreakpointValue } from '@chakra-ui/react';
 import Image from 'next/image';
 import NextLink from 'next/link';
 import { FiArrowRight } from 'react-icons/fi';
 
 export default function Careers() {
+	const isMobile = useBreakpointValue({ base: true, sm: true, md: true, lg: false });
+	const mTop = isMobile ? '144px' : '0';
 	return (
 		<>
 			<ContainerMain bg={'#F1F6FF'}>
-				<Stack gap={5}>
-					<Flex width={'108%'} ml={'-4%'}>
-						<Image src={SLUG_DATA?.urlBanner} alt={`Banner career`} />
-					</Flex>
-					<Text maxW={'50%'} fontSize={'sm'} fontWeight={400} pb={14} lineHeight={'140%'}>
+				<Stack gap={10} mt={mTop}>
+					{isMobile ? (
+						<Box
+							bgGradient={'linear(106.68deg, #0E0E0F 5.44%, #33296D 106.62%)'}
+							p={'1.54rem'}
+							isolation={'isolate'}
+							border={'1px solid #F1F6FF'}
+							boxShadow={'0px 20px 40px rgba(8, 29, 71, 0.05)'}
+							borderRadius={'20px'}
+							width={'90%'}
+						>
+							<Flex flex={1} position={'relative'} direction={'column'}>
+								<Stack color={'white'} gap={6} justify={'center'} w={'100%'} mt={'50px'}>
+									<Heading as={'h2'} fontSize={'1.024rem'} lineHeight={'100%'}>
+										Drive Innovation and Shape{' '}
+										<Heading as={'span'} color={'purple.500'} fontSize={'1.024rem'}>
+											the Future of Energy
+										</Heading>
+									</Heading>
+									<Text fontSize={'0.64rem'} fontWeight={400} lineHeight={'25px'}>
+										If you share our vision and are eager to make a difference, we invite you to explore our exciting career
+										opportunities.
+									</Text>
+									F
+								</Stack>
+								<Box flex={2} color={'white'}>
+									<Image
+										src={require('@/assets/img/img_careers.png')}
+										alt={'Image career'}
+										style={{
+											position: 'absolute',
+											top: '-40%',
+											left: '50%',
+											transform: 'translate(-50%, -50%)',
+											height: '12rem',
+											width: '21rem'
+										}}
+									/>
+								</Box>
+							</Flex>
+						</Box>
+					) : (
+						<Box
+							bgGradient={'linear(106.68deg, #0E0E0F 5.44%, #33296D 106.62%)'}
+							p={'48px'}
+							isolation={'isolate'}
+							border={'1px solid #F1F6FF'}
+							boxShadow={'0px 20px 40px rgba(8, 29, 71, 0.05)'}
+							borderRadius={'20px'}
+							width={'90%'}
+						>
+							<Flex flex={1} position={'relative'}>
+								<Stack flex={1.8} color={'white'} gap={10}>
+									<Heading as={'h2'} fontSize={'42px'} lineHeight={'100%'}>
+										Drive Innovation and Shape{' '}
+										<Heading as={'span'} color={'purple.500'} fontSize={'42px'}>
+											the Future of Energy
+										</Heading>
+									</Heading>
+									<Text fontSize={'20px'} fontWeight={400} lineHeight={'25px'}>
+										If you share our vision and are eager to make a difference, we invite you to explore our exciting career
+										opportunities.
+									</Text>
+									F
+								</Stack>
+								<Box flex={2} color={'white'}>
+									<Image
+										src={require('@/assets/img/img_careers.png')}
+										alt={'Image career'}
+										style={{
+											position: 'absolute',
+											top: '80%',
+											left: '85%',
+											transform: 'translate(-50%, -50%)',
+											height: '297px',
+											width: '581px'
+										}}
+									/>
+								</Box>
+							</Flex>
+						</Box>
+					)}
+
+					<Text maxW={'50%'} fontSize={'sm'} fontWeight={400} pb={14} lineHeight={'140%'} mt={'80px'}>
 						{SLUG_DATA?.description}
 					</Text>
 

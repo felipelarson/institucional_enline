@@ -11,11 +11,11 @@ export const Footer = () => {
 			<Container as={Stack} maxW={'6xl'} pt={16} pb={10}>
 				<SimpleGrid
 					templateColumns={{ sm: '1fr', md: '1.65fr 1fr 1fr 1fr' }}
-					spacing={16}
+					spacing={['4', '16']}
 					borderBottom={'1px solid rgba(255,255,255, 0.2)'}
 					pb={8}
 				>
-					<Stack spacing={6}>
+					<Stack spacing={6} align={['center', 'flex-start']}>
 						<Box as={NextLink} href={'/'}>
 							<Image src={require('@/assets/svg/brand_enline_white.svg')} alt="Enline's brand" />
 						</Box>
@@ -24,7 +24,7 @@ export const Footer = () => {
 							<Image src={require('@/assets/img/startup.png')} alt="Enline's brand" height={87} />
 						</Box>
 					</Stack>
-					<Stack align={'flex-start'} spacing={'16px'}>
+					<Stack align={['center', 'flex-start']} spacing={'16px'}>
 						<Link href={'/company'}>
 							<Heading fontSize={'14px'} fontWeight={700}>
 								Company
@@ -41,9 +41,9 @@ export const Footer = () => {
 							</Heading>
 						</Link>
 					</Stack>
-					<Stack align={'flex-start'}>
+					<Stack align={['center', 'flex-start']}>
 						<Link href={'/learn'}>
-							<Heading fontSize={'14px'} fontWeight={700}>
+							<Heading fontSize={'14px'} fontWeight={700} mb={'2'}>
 								Learn & Tutorials
 							</Heading>
 						</Link>
@@ -55,7 +55,7 @@ export const Footer = () => {
 						{/* <Link href={'/news'}>Newsroom</Link>
 						<Link href={'/careers'}>Careers</Link> */}
 					</Stack>
-					<Stack align={'flex-end'} spacing={5}>
+					<Stack align={['center', 'flex-end']} spacing={5}>
 						<Button
 							as={NextLink}
 							href={'https://questionnaire.enline-transmission.com/'}

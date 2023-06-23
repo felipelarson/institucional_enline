@@ -1,5 +1,5 @@
 export const SLUG_DATA: { [key: string]: any } = {
-	urlBanner: require('@/assets/img/img_careers.png'),
+	urlBanner: require('@/assets/img/img_career.png'),
 	cardList: [
 		{
 			icon: 'monitoring',

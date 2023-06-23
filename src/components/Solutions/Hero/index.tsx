@@ -10,7 +10,7 @@ export const Hero = () => {
 	return (
 		<Grid templateColumns={{ md: 'repeat(2, 1fr)', sm: 'repeat(1, 1fr)' }} gap={6} mt={'36px'}>
 			{BANNER_DATA.map((item, index) => (
-				<Card key={index} bgGradient={'linear(106.68deg, #0E0E0F 5.44%, #33296D 106.62%)'} color={'white'} p={'48px'} borderRadius={'20px'}>
+				<Card key={index} bgGradient={item.bgGradient} color={'white'} p={'48px'} borderRadius={'20px'}>
 					<Stack gap={12} justify={'flex-start'}>
 						<Button
 							as={NextLink}

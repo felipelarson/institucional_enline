@@ -1,7 +1,6 @@
-import { ContainerMain } from '@/components/Common';
 import { SLUG_DATA } from '@/pages/solutions/[slug]/mock';
 
-import { AspectRatio, Box, Button, Flex, HStack, Heading, Stack, Text } from '@chakra-ui/react';
+import { Box, Button, Flex, Heading, Stack, Text } from '@chakra-ui/react';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 
@@ -11,16 +10,17 @@ export const SlugHero = () => {
 
 	const bgButtonGradient = 'linear(to-r, #5F296D, #33296D)';
 	return (
-		<ContainerMain>
-			<HStack
-				bgGradient={'linear(106.68deg, #0E0E0F 5.44%, #33296D 106.62%)'}
-				color={'white'}
-				p={'48px 0 48px 48px'}
-				borderRadius={'20px'}
-				maxW={{ lg: '868px', xl: '1298px' }}
-				h={'397px'}
-			>
-				<Stack flex={1} justify={'space-between'} h={'100%'}>
+		<Box
+			bgGradient={'linear(106.68deg, #0E0E0F 5.44%, #33296D 106.62%)'}
+			p={'48px'}
+			isolation={'isolate'}
+			border={'1px solid #F1F6FF'}
+			boxShadow={'0px 20px 40px rgba(8, 29, 71, 0.05)'}
+			borderRadius={'20px'}
+			maxW={{ lg: '838px', xl: '970px' }}
+		>
+			<Flex flex={1} position={'relative'}>
+				<Stack flex={1.8} color={'white'} gap={10}>
 					<Button
 						bgGradient={bgButtonGradient}
 						color={'white'}
@@ -51,16 +51,20 @@ export const SlugHero = () => {
 						{SLUG_DATA[slug]?.hero.description}
 					</Text>
 				</Stack>
-				<Box flex={1} pos={'relative'} top={135} right={-100}>
-					<AspectRatio ratio={1}>
-						<Image
-							src={SLUG_DATA[slug]?.hero.imgScreen}
-							alt="image notebook"
-							style={{ objectFit: 'contain', width: '670px', height: '393px' }}
-						/>
-					</AspectRatio>
+				<Box flex={2} color={'white'}>
+					<Image
+						src={SLUG_DATA[slug]?.hero.imgScreen}
+						alt="image notebook"
+						style={{
+							position: 'absolute',
+							top: '80%',
+							left: '85%',
+							transform: 'translate(-50%, -50%)',
+							width: '570px'
+						}}
+					/>
 				</Box>
-			</HStack>
-		</ContainerMain>
+			</Flex>
+		</Box>
 	);
 };

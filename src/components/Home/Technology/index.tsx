@@ -23,9 +23,10 @@ export const Technology = () => {
 					<Flex
 						justifyContent={'space-between'}
 						alignItems={'center'}
+						direction={['column', 'row']}
 						bg={'gray.50'}
 						p={'32px 24px 32px 34px'}
-						h={144}
+						h={['fit-content', 'fit-content', 'fit-content', 144]}
 						border={'1px solid #D8E1E9'}
 						borderRadius={20}
 						w={'85%'}

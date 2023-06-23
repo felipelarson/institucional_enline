@@ -13,7 +13,7 @@ export const BannerWithScreen = ({ title, description, image, link }: IBannerWit
 				bgGradient={'linear(to-r, #0E0E0F, #33296D)'}
 				color={'white'}
 				borderRadius={'2xl'}
-				p={'20px 20px 20px 70px'}
+				p={['20px', '20px', '20px 20px 20px 70px', '20px 20px 20px 70px']}
 				direction={['column-reverse', 'column-reverse', 'column-reverse', 'row']}
 				w={'100%'}
 				h={'100%'}
@@ -46,7 +46,7 @@ export const BannerWithScreen = ({ title, description, image, link }: IBannerWit
 						</Button>
 					</Stack>
 
-					<AspectRatio ratio={1.704 / 1} flex={1} position={'relative'}>
+					<AspectRatio ratio={1.704 / 1} flex={1} position={'relative'} display={['none', 'none', 'block', 'block']}>
 						<Image src={require(`@/assets/img/${image}.png`)} alt={image} fill />
 					</AspectRatio>
 				</Flex>

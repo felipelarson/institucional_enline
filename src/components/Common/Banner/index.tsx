@@ -21,11 +21,11 @@ export const Banner = ({ title, titleColor, description, descriptionColor }: IBa
 			<Image src={require(`@/assets/svg/bg-line.svg`)} alt={'bg-line'} fill={true} style={{ objectFit: 'cover' }} />
 			<Stack gap={10}>
 				<Stack>
-					<Heading as={'h2'} lineHeight={'100%'}>
+					<Heading as={'h2'} lineHeight={'100%'} fontSize={['25px', '30px', '42px', '42px']}>
 						{title}
 					</Heading>
 					{titleColor && (
-						<Heading as={'h2'} color={'purple.500'} lineHeight={'100%'}>
+						<Heading as={'h2'} color={'purple.500'} lineHeight={'100%'} fontSize={['25px', '30px', '42px', '42px']}>
 							{titleColor}
 						</Heading>
 					)}

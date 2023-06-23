@@ -1,6 +1,7 @@
 import { SLUG_DATA } from './mock';
 
 import { CardCommon, ContainerMain, ListUseCases, TitleSection } from '@/components/Common';
+import { SlugHero } from '@/components/Solutions/Slug/Hero';
 
 import { ChevronRightIcon } from '@chakra-ui/icons';
 import { Box, Button, Card, Flex, Grid, Heading, Stack, Text, Breadcrumb, BreadcrumbItem, BreadcrumbLink } from '@chakra-ui/react';
@@ -18,7 +19,7 @@ export default function Slug() {
 	return (
 		<>
 			<ContainerMain bg={'#F1F6FF'}>
-				<Breadcrumb spacing="2px" separator={<ChevronRightIcon color="gray.500" />} mb={4} color={'gray'} fontWeight={700} fontSize={'12px'}>
+				<Breadcrumb spacing="2px" separator={<ChevronRightIcon color="gray.500" />} color={'gray'} fontWeight={700} fontSize={'12px'}>
 					<BreadcrumbItem>
 						<BreadcrumbLink href="/">Home</BreadcrumbLink>
 					</BreadcrumbItem>
@@ -36,12 +37,9 @@ export default function Slug() {
 						</BreadcrumbLink>
 					</BreadcrumbItem>
 				</Breadcrumb>
-				<Stack gap={5}>
-					<Flex width={'108%'} ml={'-4%'}>
-						<Image src={SLUG_DATA[slug]?.urlBanner} alt={`Banner ${slug}`} />
-						{/* <SlugHero /> */}
-					</Flex>
-					<Text maxW={'80%'} fontSize={'18px'} fontWeight={400} pb={'16'}>
+				<Stack gap={5} mt={'20px'}>
+					<SlugHero />
+					<Text maxW={'80%'} fontSize={'18px'} fontWeight={400} pb={'16'} pt={'24'}>
 						{SLUG_DATA[slug]?.description}
 					</Text>
 
@@ -196,14 +194,16 @@ export default function Slug() {
 							justifyContent={'space-between'}
 							alignItems={'center'}
 							bgGradient={'linear(161.72deg, #F2F7FF 0.8%, #D7DEFA 88.27%)'}
-							px={'48px'}
-							py={'60px'}
+							px={['24px', '48px']}
+							py={['30px', '60px']}
 							border={'1px solid #D8E1E9'}
 							borderRadius={20}
 							w={'85%'}
+							direction={['column', 'row']}
+							gap={10}
 						>
-							<Stack maxW={'67%'}>
-								<Heading as={'h2'} fontWeight={'bold'} fontSize={'32px'} lineHeight={'100%'}>
+							<Stack maxW={['100%', '67%']} justifyContent={['center', 'flex-start']}>
+								<Heading as={'h2'} fontWeight={'bold'} fontSize={['25px', '32px']} lineHeight={'100%'}>
 									{SLUG_DATA[slug]?.titleCardCustomer}
 								</Heading>
 								<Text color={'purple.500'} fontWeight={'400'} fontSize={'18px'} lineHeight={'150%'}>

@@ -9,7 +9,8 @@ export const BANNER_DATA = [
 			'TSOs and DSOs tracking grid performance',
 			'Industrial facilities overseeing energy-intensive equipment'
 		],
-		href: '/solutions/liveview'
+		href: '/solutions/liveview',
+		bgGradient: 'linear(106.68deg, #0E0E0F 5.44%, #33296D 106.62%)'
 	},
 	{
 		icon: 'icon_optimax',
@@ -20,7 +21,8 @@ export const BANNER_DATA = [
 			'TSOs and DSOs optimizing grid performance',
 			'Power generation companies managing energy losses'
 		],
-		href: '/solutions/optimax'
+		href: '/solutions/optimax',
+		bgGradient: 'linear-gradient(106.68deg, #0E0E0F 5.44%, #5C296D 106.62%)'
 	},
 	{
 		icon: 'icon_predictpro',
@@ -32,7 +34,8 @@ export const BANNER_DATA = [
 			'Power plants optimizing asset performance',
 			'Renewable energy facilities forecasting potential issues'
 		],
-		href: '/solutions/predictpro'
+		href: '/solutions/predictpro',
+		bgGradient: 'linear(106.68deg, #0E0E0F 5.44%, #33296D 106.62%)'
 	},
 	{
 		icon: 'icon_safeguard',
@@ -44,7 +47,8 @@ export const BANNER_DATA = [
 			'Power plants managing equipment failure risks',
 			'TSOs and DSOs safeguarding critical infrastructure'
 		],
-		href: '/solutions/safeguard'
+		href: '/solutions/safeguard',
+		bgGradient: 'linear-gradient(106.68deg, #0E0E0F 5.44%, #5C296D 106.62%)'
 	},
 	{
 		icon: 'icon_smartdesign',
@@ -56,6 +60,7 @@ export const BANNER_DATA = [
 			'Utility companies evaluating grid expansion strategies',
 			'Engineering firms simulating power system performance'
 		],
-		href: '/solutions/smartdesign'
+		href: '/solutions/smartdesign',
+		bgGradient: 'linear(106.68deg, #0E0E0F 5.44%, #33296D 106.62%)'
 	}
 ];

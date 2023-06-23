@@ -61,6 +61,11 @@ export const CarouselMap = ({ location }: IMyCarousel) => {
 			title: 'Australia and Oceania',
 			bottom: '5%',
 			right: 0
+		},
+		theWorld: {
+			title: 'The world',
+			bottom: '-10%',
+			right: '5%'
 		}
 	};
 
