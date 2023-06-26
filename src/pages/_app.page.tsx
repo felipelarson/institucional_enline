@@ -12,7 +12,7 @@ export default function App({ Component, pageProps }: AppProps) {
 	return (
 		<>
 			<Head>
-				<title>Enline | Institutional</title>
+				<title>Enline | Energy monitoring made simple</title>
 			</Head>
 			<ChakraProvider theme={theme}>
 				<Navbar />

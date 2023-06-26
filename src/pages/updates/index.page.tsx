@@ -1,9 +1,10 @@
 import { Banner, ContainerMain } from '@/components/Common';
 import { Version, TableReleaseVersions } from '@/components/Updates';
 
-import { Flex } from '@chakra-ui/react';
+import { Flex, useBreakpointValue } from '@chakra-ui/react';
 
-export default function updates() {
+export default function Updates() {
+	const isMobile = useBreakpointValue({ base: true, sm: true, md: false });
 	return (
 		<ContainerMain bg={'#F1F6FF'}>
 			<Banner
@@ -14,7 +15,7 @@ export default function updates() {
 			/>
 			<Flex mt={20} gap={10}>
 				<Version />
-				<TableReleaseVersions />
+				{isMobile ? <></> : <TableReleaseVersions />}
 			</Flex>
 		</ContainerMain>
 	);
