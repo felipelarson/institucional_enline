@@ -60,7 +60,7 @@ const Button = {
 		hero: {
 			color: 'white',
 			bg: 'purple.500',
-			p: '24px 16px',
+			p: '1rem',
 			w: 'fit-content',
 			fontSize: '18px',
 			fontWeight: '700',

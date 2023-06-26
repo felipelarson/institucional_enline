@@ -16,8 +16,8 @@ const responsive = {
 	},
 	mobile: {
 		breakpoint: { max: 464, min: 0 },
-		items: 1,
-		slidesToSlide: 1
+		items: 3,
+		slidesToSlide: 3
 	}
 };
 
@@ -98,8 +98,13 @@ export const CarouselMap = ({ location }: IMyCarousel) => {
 			>
 				{cards.map((url, index) => (
 					<Box bg={'white'} key={index} mx={2} border={'0.72px solid #D8E1E9'} p={'11px'} borderRadius={'3.6px'}>
-						<Flex height={'54px'} width={'122px'} position={'relative'}>
-							<Image src={url.image} alt={'client'} fill={true} style={{ objectFit: 'contain' }} />
+						<Flex height={'54px'} position={'relative'}>
+							<Image
+								src={url.image}
+								alt={'client'}
+								fill={true}
+								style={{ objectFit: 'contain', width: '100%', objectPosition: 'center' }}
+							/>
 						</Flex>
 					</Box>
 				))}

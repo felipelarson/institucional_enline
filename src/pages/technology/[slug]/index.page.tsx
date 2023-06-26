@@ -3,7 +3,7 @@ import { TECHNOLOGY_DATA } from './technologyData';
 import { CardCommon, ContainerMain, ListUseCases } from '@/components/Common';
 
 import { ChevronRightIcon } from '@chakra-ui/icons';
-import { Box, Breadcrumb, BreadcrumbItem, BreadcrumbLink, Button, Flex, Grid, Heading, Stack, Text } from '@chakra-ui/react';
+import { Box, Breadcrumb, BreadcrumbItem, BreadcrumbLink, Button, Flex, Grid, Heading, Stack, Text, useBreakpointValue } from '@chakra-ui/react';
 import Image from 'next/image';
 import NextLink from 'next/link';
 import { useRouter } from 'next/router';
@@ -11,6 +11,7 @@ import { useRouter } from 'next/router';
 export default function SlugTechnology() {
 	const router = useRouter();
 	const { slug } = router.query as { slug: string };
+	const isMobile = useBreakpointValue({ base: true, sm: true, md: true, lg: false });
 
 	const bgButtonGradient = 'linear(to-r, #5F296D, #33296D)';
 
@@ -37,9 +38,51 @@ export default function SlugTechnology() {
 				</Breadcrumb>
 
 				<Stack gap={20}>
-					<Flex width={'108%'} ml={'-4%'}>
-						<Image src={TECHNOLOGY_DATA[slug]?.urlBanner} alt={`Banner ${slug}`} />
-					</Flex>
+					{isMobile ? (
+						<Box
+							bgGradient={'linear(106.68deg, #0E0E0F 5.44%, #33296D 106.62%)'}
+							p={'1.54rem'}
+							isolation={'isolate'}
+							border={'1px solid #F1F6FF'}
+							boxShadow={'0px 20px 40px rgba(8, 29, 71, 0.05)'}
+							borderRadius={'20px'}
+							width={'90%'}
+							mt={'11rem'}
+						>
+							<Flex flex={1} position={'relative'} direction={'column'}>
+								<Stack color={'white'} gap={[4, 6]} justify={'center'} w={'100%'} mt={'50px'}>
+									<Text fontSize={'0.64rem'} lineHeight={'140%'} fontWeight={400} color={'#FFAE33'}>
+										{TECHNOLOGY_DATA[slug]?.titleBannerMobile}
+									</Text>
+									<Heading as={'h2'} fontSize={'1.024rem'} lineHeight={'100%'}>
+										{TECHNOLOGY_DATA[slug]?.subtitleBannerMobile}
+									</Heading>
+									<Text fontSize={'0.64rem'} fontWeight={400} lineHeight={'140%'}>
+										{TECHNOLOGY_DATA[slug]?.descriptionBannerMobile}
+									</Text>
+									F
+								</Stack>
+								<Box flex={2} color={'white'}>
+									<Image
+										src={TECHNOLOGY_DATA[slug]?.urlBannerMobile}
+										alt={'Image career'}
+										style={{
+											position: 'absolute',
+											top: '-40%',
+											left: '50%',
+											transform: 'translate(-50%, -50%)',
+											height: '12rem',
+											width: '21rem'
+										}}
+									/>
+								</Box>
+							</Flex>
+						</Box>
+					) : (
+						<Flex width={'108%'} ml={'-4%'}>
+							<Image src={TECHNOLOGY_DATA[slug]?.urlBanner} alt={`Banner ${slug}`} />
+						</Flex>
+					)}
 					<Text maxW={'80%'} fontSize={'18px'} fontWeight={400}>
 						{TECHNOLOGY_DATA[slug]?.description}
 					</Text>
@@ -50,7 +93,7 @@ export default function SlugTechnology() {
 						))}
 					</Grid>
 					<Box bg={'white'} border={'1px solid #D8E1E9'} w={'100%'} p={'32px 24px'} borderRadius={'5px'}>
-						<Flex>
+						<Flex direction={['column', 'row']} gap={10}>
 							<Box bg={'#F1F6FF'} p={'24px'}>
 								<Stack gap={6}>
 									<Heading size={'md'}>{TECHNOLOGY_DATA[slug]?.titleBanner}</Heading>
@@ -110,9 +153,11 @@ export default function SlugTechnology() {
 											border={'1px solid #D8E1E9'}
 											borderRadius={20}
 											maxW={'861px'}
+											direction={['column', 'row']}
+											gap={10}
 										>
 											<Stack>
-												<Heading as={'h2'} fontWeight={700} fontSize={'32px'} lineHeight={'100%'} maxW={'510px'}>
+												<Heading as={'h2'} fontWeight={700} fontSize={['25px', '32px']} lineHeight={'100%'} maxW={'510px'}>
 													{item.titleCardBanner}
 												</Heading>
 												<Text color={'purple.500'}>Book a demo today!</Text>
