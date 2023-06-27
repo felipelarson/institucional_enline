@@ -1,7 +1,7 @@
 export interface NavItem {
 	label: string;
 	subLabel?: string;
-	children?: Array<NavItem>;
-	href?: string;
+	children?: NavItem[];
+	href?: string | undefined;
 	icon?: any;
 }

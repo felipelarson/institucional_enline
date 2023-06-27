@@ -39,7 +39,7 @@ export default function Slug() {
 				</Breadcrumb>
 				<Stack gap={5} mt={'20px'}>
 					<SlugHero />
-					<Text maxW={'80%'} fontSize={'18px'} fontWeight={400} pb={'16'} pt={'24'}>
+					<Text maxW={['100%', '80%']} fontSize={'18px'} fontWeight={400} pb={'16'} pt={'24'}>
 						{SLUG_DATA[slug]?.description}
 					</Text>
 
@@ -93,7 +93,7 @@ export default function Slug() {
 						description={'Empowering Success with Tailored Solutions'}
 					/>
 					{/* start card */}
-					<Grid templateColumns={'repeat(auto-fit, minmax(338px, 1fr))'} gap={6}>
+					<Grid templateColumns={['repeat(auto-fit, minmax(238px, 1fr))', 'repeat(auto-fit, minmax(338px, 1fr))']} gap={6}>
 						{SLUG_DATA[slug]?.cardCustomer.map((item, index) => (
 							<Card key={index} px={4} py={5} bg={'white'} border={'1px solid #D8E1E9'} borderRadius={5}>
 								<Stack bg={'#F1F6FF'} p={4} borderRadius={5} mb={6} h={'250px'} justifyContent={'space-between'}>
