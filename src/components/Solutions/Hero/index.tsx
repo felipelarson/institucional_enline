@@ -10,8 +10,8 @@ export const Hero = () => {
 	return (
 		<Grid templateColumns={{ md: 'repeat(2, 1fr)', sm: 'repeat(1, 1fr)' }} gap={6} mt={'36px'}>
 			{BANNER_DATA.map((item, index) => (
-				<Card key={index} bgGradient={item.bgGradient} color={'white'} p={'48px'} borderRadius={'20px'}>
-					<Stack gap={12} justify={'flex-start'}>
+				<Card key={index} bgGradient={item.bgGradient} color={'white'} p={['24px', '48px']} borderRadius={'20px'}>
+					<Stack gap={[6, 12]} justify={'flex-start'}>
 						<Button
 							as={NextLink}
 							href={item.href}
@@ -19,7 +19,7 @@ export const Hero = () => {
 							color={'white'}
 							rounded={'full'}
 							size={'degrade'}
-							w={'288px'}
+							w={['fit-content', '288px']}
 							h={'fit-content'}
 							justifyContent={'flex-start'}
 							pl={'5px'}
@@ -64,12 +64,12 @@ export const Hero = () => {
 					</Stack>
 				</Card>
 			))}
-			<Card bgGradient={'linear(161.72deg, #F2F7FF 0.8%, #D7DEFA 88.27%)'} color={'black'} p={'48px'} borderRadius={'20px'}>
+			<Card bgGradient={'linear(161.72deg, #F2F7FF 0.8%, #D7DEFA 88.27%)'} color={'black'} p={['24px', '48px']} borderRadius={'20px'}>
 				<Stack gap={8} justify={'center'} h={'100%'}>
-					<Heading fontSize={'32px'} lineHeight={'100%'}>
+					<Heading fontSize={['25px', '32px']} lineHeight={'100%'}>
 						Discover how Enline can transform your TSO operations
 					</Heading>
-					<Heading color={'purple.500'} fontSize={'32px'} lineHeight={'100%'}>
+					<Heading color={'purple.500'} fontSize={['25px', '32px']} lineHeight={'100%'}>
 						Request a demo today!
 					</Heading>
 

@@ -8,8 +8,8 @@ export const BoxWithImage = () => {
 		<Flex
 			border={'1px solid'}
 			borderColor={'gray.200'}
-			mt={20}
-			p={'48px'}
+			mt={[10, 20]}
+			p={['24px', '48px']}
 			borderRadius={'20px'}
 			gap={10}
 			flexDir={['column', 'column', 'column', 'row']}

@@ -64,8 +64,9 @@ export const CarouselMap = ({ location }: IMyCarousel) => {
 		},
 		theWorld: {
 			title: 'The world',
-			bottom: '-10%',
-			right: '5%'
+			bottom: '-15%',
+			right: '-5%',
+			transform: 'translate(-50%, -50%)'
 		}
 	};
 

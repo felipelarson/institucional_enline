@@ -6,13 +6,13 @@ import { FiMail } from 'react-icons/fi';
 
 export const Contact = () => {
 	return (
-		<ContainerMain bg={'#F1F6FF'}>
-			<Stack width={'70%'}>
+		<ContainerMain bg={'#F1F6FF'} p={['0', '16px']}>
+			<Stack width={['100%', '70%']}>
 				<Grid templateColumns={'repeat(auto-fit, minmax(330px, 1fr))'} gap={4} w={'100%'}>
 					<Card bg={'white'} border={'1px solid #D8E1E9'} px={'24px'} py={'32px'} boxShadow={'none'}>
 						<CardHeader>
 							<Stack gap={4}>
-								<Image src={require('@/assets/svg/icon_point.svg')} alt={''} width={50} height={50} />
+								<Image src={require('@/assets/svg/icon_point.svg')} alt={'icon point'} width={50} height={50} />
 								<Flex flex={1} alignItems={'center'} flexWrap={'wrap'}>
 									<Box>
 										<Heading fontSize={'18px'}>Meet our team</Heading>

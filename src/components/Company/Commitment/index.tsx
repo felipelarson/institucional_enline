@@ -11,7 +11,7 @@ export const Commitment = () => {
 				subtitle="Enline's Pledge for a Greener Future"
 				description="Empowering Sustainable Energy Solutions and Tackling Climate Change Challenges."
 			/>
-			<Flex mt={20} gap={10} flexWrap={'wrap'}>
+			<Flex mt={20} gap={[5, 10]} flexWrap={'wrap'}>
 				<Box bg={'white'} w={['40%', '40%', 230]} p={'10px'} borderRadius={'10px'}>
 					<Image src={require('@/assets/img/pledge_goals.png')} alt="Pledge Goals" width={180} />
 				</Box>

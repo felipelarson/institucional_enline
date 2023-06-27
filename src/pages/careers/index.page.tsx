@@ -22,17 +22,17 @@ export default function Careers() {
 							border={'1px solid #F1F6FF'}
 							boxShadow={'0px 20px 40px rgba(8, 29, 71, 0.05)'}
 							borderRadius={'20px'}
-							width={'90%'}
+							width={['100%', '90%']}
 						>
 							<Flex flex={1} position={'relative'} direction={'column'}>
-								<Stack color={'white'} gap={6} justify={'center'} w={'100%'} mt={'50px'}>
+								<Stack color={'white'} gap={[4, 6]} justify={'center'} w={'100%'} mt={'50px'}>
 									<Heading as={'h2'} fontSize={'1.024rem'} lineHeight={'100%'}>
 										Drive Innovation and Shape{' '}
 										<Heading as={'span'} color={'purple.500'} fontSize={'1.024rem'}>
 											the Future of Energy
 										</Heading>
 									</Heading>
-									<Text fontSize={'0.64rem'} fontWeight={400} lineHeight={'25px'}>
+									<Text fontSize={'0.64rem'} fontWeight={400} lineHeight={'140%'}>
 										If you share our vision and are eager to make a difference, we invite you to explore our exciting career
 										opportunities.
 									</Text>
@@ -44,10 +44,10 @@ export default function Careers() {
 										alt={'Image career'}
 										style={{
 											position: 'absolute',
-											top: '-40%',
+											top: '-25%',
 											left: '50%',
 											transform: 'translate(-50%, -50%)',
-											height: '12rem',
+											height: '9rem',
 											width: '21rem'
 										}}
 									/>
@@ -96,7 +96,7 @@ export default function Careers() {
 						</Box>
 					)}
 
-					<Text maxW={'50%'} fontSize={'sm'} fontWeight={400} pb={14} lineHeight={'140%'} mt={'80px'}>
+					<Text maxW={['100%', '50%']} fontSize={'sm'} fontWeight={400} pb={14} lineHeight={'140%'} mt={'80px'}>
 						{SLUG_DATA?.description}
 					</Text>
 
@@ -162,7 +162,7 @@ export default function Careers() {
 				<Stack gap={20}>
 					<Stack gap={3}>
 						<Heading as={'h2'}>Opportunity Awaits: Explore Our Current Job Openings</Heading>
-						<Text fontSize={'sm'} fontWeight={400} lineHeight={'140%'} maxW={'50%'}>
+						<Text fontSize={'sm'} fontWeight={400} lineHeight={'140%'} maxW={['100%', '50%']}>
 							Learn about our company culture, and find out why Enline is the perfect place to grow your career.
 						</Text>
 					</Stack>

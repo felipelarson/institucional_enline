@@ -105,7 +105,7 @@ export const Customer = () => {
 						h={['fit-content', 'fit-content', 'fit-content', 144]}
 						border={'1px solid #D8E1E9'}
 						borderRadius={20}
-						w={'85%'}
+						w={['100%', '85%']}
 						gap={8}
 					>
 						<Text fontSize={'14px'} lineHeight={'19.6px'} fontWeight={'400'}>
