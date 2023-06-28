@@ -39,7 +39,7 @@ export const Navbar = () => {
 				align={'center'}
 				boxShadow={'0px 5px 10px rgba(8, 29, 71, 0.05)'}
 			>
-				<Flex flex={{ base: 1, md: 'auto' }} ml={{ base: -2 }} display={{ base: 'flex', md: 'none' }}>
+				<Flex flex={{ base: 1, xl: 'auto' }} ml={{ base: -2 }} display={{ base: 'flex', xl: 'none' }}>
 					<IconButton
 						onClick={onToggle}
 						icon={isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />}
@@ -59,12 +59,12 @@ export const Navbar = () => {
 						<Image src={require('@/assets/svg/brand_enline.svg')} alt={"Enline's brand"} />
 					</Box>
 
-					<Flex display={{ base: 'none', md: 'flex' }} ml={10}>
+					<Flex display={{ base: 'none', xl: 'flex' }} ml={10}>
 						<DesktopNav />
 					</Flex>
 				</Flex>
 
-				<Stack flex={{ base: 1, md: 0 }} justify={'flex-end'} direction={'row'} spacing={6}>
+				<Stack flex={{ base: 1, xl: 0 }} justify={'flex-end'} direction={'row'} spacing={6}>
 					<Button
 						as={NextLink}
 						href={'https://questionnaire.enline-transmission.com/'}
@@ -241,7 +241,7 @@ const DesktopSubNav = ({ label, href, subLabel, icon }: NavItem) => {
 
 const MobileNav = () => {
 	return (
-		<Stack bg={useColorModeValue('white', 'gray.800')} p={4} display={{ md: 'none' }}>
+		<Stack bg={useColorModeValue('white', 'gray.800')} p={4} display={{ xl: 'none' }}>
 			{NAV_ITEMS.map((navItem) => (
 				<MobileNavItem key={navItem.label} {...navItem} />
 			))}
