@@ -4,7 +4,7 @@ import { FiArrowDownCircle } from 'react-icons/fi';
 
 export const HeroMobile = () => {
 	return (
-		<Flex direction={'column-reverse'} h={'calc(100vh - 100px)'}>
+		<Flex direction={'column-reverse'} h={['100%', 'calc(100vh - 100px)']}>
 			<Stack w={'100%'} align={'center'}>
 				<Box
 					boxShadow={'0px 20px 40px rgba(8, 29, 71, 0.05)'}

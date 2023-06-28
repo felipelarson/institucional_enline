@@ -37,7 +37,7 @@ export default function SlugTechnology() {
 					</BreadcrumbItem>
 				</Breadcrumb>
 
-				<Stack gap={20}>
+				<Stack gap={[10, 20]}>
 					{isMobile ? (
 						<Box
 							bgGradient={'linear(106.68deg, #0E0E0F 5.44%, #33296D 106.62%)'}
@@ -46,7 +46,7 @@ export default function SlugTechnology() {
 							border={'1px solid #F1F6FF'}
 							boxShadow={'0px 20px 40px rgba(8, 29, 71, 0.05)'}
 							borderRadius={'20px'}
-							width={'90%'}
+							width={['100%', '90%']}
 							mt={'11rem'}
 						>
 							<Flex flex={1} position={'relative'} direction={'column'}>
@@ -60,7 +60,6 @@ export default function SlugTechnology() {
 									<Text fontSize={'0.64rem'} fontWeight={400} lineHeight={'140%'}>
 										{TECHNOLOGY_DATA[slug]?.descriptionBannerMobile}
 									</Text>
-									F
 								</Stack>
 								<Box flex={2} color={'white'}>
 									<Image
@@ -83,11 +82,11 @@ export default function SlugTechnology() {
 							<Image src={TECHNOLOGY_DATA[slug]?.urlBanner} alt={`Banner ${slug}`} />
 						</Flex>
 					)}
-					<Text maxW={'80%'} fontSize={'18px'} fontWeight={400}>
+					<Text maxW={['100%', '80%']} fontSize={['14px', '18px']} fontWeight={400} lineHeight={'140%'}>
 						{TECHNOLOGY_DATA[slug]?.description}
 					</Text>
 
-					<Grid templateColumns={'repeat(auto-fit, minmax(200px, 1fr))'} gap={10}>
+					<Grid templateColumns={'repeat(auto-fit, minmax(200px, 1fr))'} gap={[5, 10]}>
 						{TECHNOLOGY_DATA[slug]?.cardList.map((item: { icon: string; title: string; text: string }, index: number) => (
 							<CardCommon key={index} icons={item.icon} title={item.title} text={item.text} boxShadow={'none'} />
 						))}
@@ -152,7 +151,7 @@ export default function SlugTechnology() {
 											p={'44px'}
 											border={'1px solid #D8E1E9'}
 											borderRadius={20}
-											maxW={'861px'}
+											maxW={['100%', '861px']}
 											direction={['column', 'row']}
 											gap={10}
 										>

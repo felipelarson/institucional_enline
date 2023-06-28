@@ -45,7 +45,7 @@ export default function Slug() {
 						position={'relative'}
 					>
 						<Image src={require(`@/assets/svg/bg_line_brand.svg`)} alt={`Banner ${slug}`} fill={true} style={{ objectFit: 'cover' }} />
-						<Stack color={'white'} gap={'48px'}>
+						<Stack color={'white'} gap={['24px', '48px']}>
 							<Box
 								w={'67px'}
 								h={'67px'}
@@ -59,7 +59,7 @@ export default function Slug() {
 									<Image src={SLUG_DATA[slug]?.bannerInitial.icon} alt={`Banner ${slug}`} style={{ objectFit: 'contain' }} />
 								</Flex>
 							</Box>
-							<Heading as={'h2'} fontSize={'32px'} fontWeight={700} lineHeight={'100%'} maxW={'470px'}>
+							<Heading as={'h2'} fontSize={['25px', '32px']} fontWeight={700} lineHeight={'100%'} maxW={'470px'}>
 								{SLUG_DATA[slug]?.bannerInitial.title}
 							</Heading>
 							<Text fontSize={'20px'} fontWeight={400} lineHeight={'25px'}>
@@ -72,7 +72,7 @@ export default function Slug() {
 						border={'1px solid'}
 						borderColor={'gray.200'}
 						mt={24}
-						p={'48px'}
+						p={['24px', '48px']}
 						borderRadius={'20px'}
 						gap={16}
 						alignItems={'center'}
@@ -146,16 +146,16 @@ export default function Slug() {
 						justifyContent={'space-between'}
 						alignItems={'center'}
 						bgGradient={'linear(161.72deg, #F2F7FF 0.8%, #D7DEFA 88.27%)'}
-						px={'48px'}
-						py={'60px'}
+						px={['24px', '48px']}
+						py={['30px', '60px']}
 						h={'fit-content'}
-						gap={16}
+						gap={[8, 16]}
 						border={'1px solid #D8E1E9'}
 						borderRadius={20}
 						direction={['column', 'column', 'column', 'row']}
 					>
 						<Stack>
-							<Heading fontWeight={'bold'} as={'h2'} fontSize={['xl', '3xl']}>
+							<Heading fontWeight={'bold'} as={'h2'} fontSize={['xl', '3xl']} lineHeight={'100%'}>
 								{SLUG_DATA[slug]?.titleSchedule}
 							</Heading>
 							<Text color={'purple.500'}>Request a demo today!</Text>

@@ -158,8 +158,8 @@ export default function Careers() {
 					</Grid>
 				</Stack>
 			</ContainerMain>
-			<ContainerMain bgGradient={'linear(293.83deg, #D9E0FB 0%, #FFFFFF 100%)'}>
-				<Stack gap={20}>
+			<ContainerMain bgGradient={'linear(293.83deg, #D9E0FB 0%, #FFFFFF 100%)'} p={['0', '16px 100px']}>
+				<Stack gap={[10, 20]}>
 					<Stack gap={3}>
 						<Heading as={'h2'}>Opportunity Awaits: Explore Our Current Job Openings</Heading>
 						<Text fontSize={'sm'} fontWeight={400} lineHeight={'140%'} maxW={['100%', '50%']}>

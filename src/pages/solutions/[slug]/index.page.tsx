@@ -39,11 +39,11 @@ export default function Slug() {
 				</Breadcrumb>
 				<Stack gap={5} mt={'20px'}>
 					<SlugHero />
-					<Text maxW={['100%', '80%']} fontSize={'18px'} fontWeight={400} pb={'16'} pt={'24'}>
+					<Text maxW={['100%', '80%']} fontSize={['14px', '18px']} fontWeight={400} pb={'16'} pt={['12px', '24px']}>
 						{SLUG_DATA[slug]?.description}
 					</Text>
 
-					<Grid templateColumns={'repeat(auto-fit, minmax(200px, 1fr))'} gap={10}>
+					<Grid templateColumns={'repeat(auto-fit, minmax(200px, 1fr))'} gap={[5, 10]}>
 						{SLUG_DATA[slug]?.cardList.map((item, index) => (
 							<CardCommon key={index} icons={item.icon} title={item.title} text={item.text} />
 						))}
@@ -93,7 +93,7 @@ export default function Slug() {
 						description={'Empowering Success with Tailored Solutions'}
 					/>
 					{/* start card */}
-					<Grid templateColumns={['repeat(auto-fit, minmax(238px, 1fr))', 'repeat(auto-fit, minmax(338px, 1fr))']} gap={6}>
+					<Grid templateColumns={['repeat(auto-fit, minmax(238px, 1fr))', 'repeat(auto-fit, minmax(338px, 1fr))']} gap={[3, 6]}>
 						{SLUG_DATA[slug]?.cardCustomer.map((item, index) => (
 							<Card key={index} px={4} py={5} bg={'white'} border={'1px solid #D8E1E9'} borderRadius={5}>
 								<Stack bg={'#F1F6FF'} p={4} borderRadius={5} mb={6} h={'250px'} justifyContent={'space-between'}>
@@ -198,7 +198,7 @@ export default function Slug() {
 							py={['30px', '60px']}
 							border={'1px solid #D8E1E9'}
 							borderRadius={20}
-							w={'85%'}
+							w={['100%', '85%']}
 							direction={['column', 'row']}
 							gap={10}
 						>

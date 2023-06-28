@@ -22,7 +22,7 @@ export const ValuesEnline = () => {
 					}
 				/>
 
-				<Grid templateColumns={'repeat(auto-fit, minmax(300px, 1fr))'} gap={10}>
+				<Grid templateColumns={'repeat(auto-fit, minmax(300px, 1fr))'} gap={[5, 10]}>
 					{CARDVALUES.map((item, index) => (
 						<CardCommon key={index} icons={item.icon} title={item.title} text={item.text} />
 					))}

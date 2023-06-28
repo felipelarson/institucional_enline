@@ -3,7 +3,7 @@ import { CardCustomer } from '@/components/Customer';
 
 export default function CustomerIndexPage() {
 	return (
-		<ContainerMain bg={'#F1F6FF'}>
+		<ContainerMain bg={'#F1F6FF'} p={[0, '16px 100px']}>
 			<Banner
 				title={'Tailored Solutions for the'}
 				titleColor={' Energy Sector'}
