@@ -19,9 +19,19 @@ export const Customer = () => {
 					description="Explore how Enline`s technology delivers customized benefits to a wide range of industries and customer types, driving efficiency and sustainability across the energy sector."
 				/>
 
-				<Flex gap={4} direction={['column', 'column', 'column', 'row']}>
+				<Flex gap={10} direction={['column', 'column', 'column', 'row']} justifyContent={['center', 'center', 'center', 'space-between']}>
 					{CARDCUSTUMER.map((item, index) => (
-						<Card key={index} px={4} py={5} bg={'white'} border={'1px solid #D8E1E9'} borderRadius={5} boxShadow={'none'}>
+						<Card
+							key={index}
+							px={4}
+							py={5}
+							bg={'white'}
+							border={'1px solid #D8E1E9'}
+							borderRadius={5}
+							boxShadow={'none'}
+							w={['100%', '55%', '45%', '100%']}
+							alignSelf={['center', 'center', 'center', 'flex-start']}
+						>
 							<Stack bg={'#F1F6FF'} p={4} borderRadius={5} mb={6} h={'200px'} justifyContent={'space-between'}>
 								<Box bg={'white'} h={50} w={50} rounded={'full'} border={'1px solid #D8E1E9'}>
 									<Flex justifyContent={'center'} alignItems={'center'} h={'100%'}>
@@ -112,8 +122,10 @@ export const Customer = () => {
 							Explore our customer segments and see how Enline`s innovative technology is driving efficiency and sustainability across
 							diverse industries.
 						</Text>
-						<Button as={NextLink} href={'/customer'} size="xl" variant={'primary'}>
-							Customer segments
+						<Button as={NextLink} href={'/customer'} variant={'primary'} w={'fit-content'} h={'55px'}>
+							<Heading as={'h2'} fontSize={'1.18rem'} px={'24px'}>
+								Customer Segments
+							</Heading>
 						</Button>
 					</Flex>
 				</Flex>
