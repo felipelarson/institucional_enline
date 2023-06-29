@@ -5,7 +5,7 @@ import { FAQ } from '@/components/Learn/FAQ';
 import { Box, Flex, useBreakpointValue } from '@chakra-ui/react';
 
 export default function Learn() {
-	const isMobile = useBreakpointValue({ base: true, sm: true, md: false });
+	const isMobile = useBreakpointValue({ base: true, sm: true, md: true, lg: false, xl: false });
 	return (
 		<>
 			<ContainerMain bg={'#F1F6FF'}>

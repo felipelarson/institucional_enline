@@ -26,20 +26,252 @@ interface IMyCarousel {
 }
 
 export const CarouselMap = ({ location }: IMyCarousel) => {
-	const cards = [
-		{
-			image: require('@/assets/img/client_transelec.png')
-		},
-		{
-			image: require('@/assets/img/client_mocambique.png')
-		},
-		{
-			image: require('@/assets/img/client_intertechne.png')
-		},
-		{
-			image: require('@/assets/img/client_coes.png')
-		}
-	];
+	const cardsCarousel: any = {
+		north: [
+			{
+				image: require('@/assets/img/client_capgemini.png')
+			},
+			{
+				image: require('@/assets/img/client_hydroone.png')
+			},
+			{
+				image: require('@/assets/img/client_atlantica.png')
+			},
+			{
+				image: require('@/assets/img/client_fenix.png')
+			}
+		],
+		south: [
+			{
+				image: require('@/assets/img/client_intertechne.png')
+			},
+			{
+				image: require('@/assets/img/client_celepsa.png')
+			},
+			{
+				image: require('@/assets/img/client_transelec.png')
+			},
+			{
+				image: require('@/assets/img/client_bogota.png')
+			},
+			{
+				image: require('@/assets/img/client_coes.png')
+			},
+			{
+				image: require('@/assets/img/client_state_grid.png')
+			},
+			{
+				image: require('@/assets/img/client_hydroplus.png')
+			},
+			{
+				image: require('@/assets/img/client_corumba.png')
+			},
+			{
+				image: require('@/assets/img/client_ute.png')
+			},
+			{
+				image: require('@/assets/img/client_litsa.png')
+			},
+			{
+				image: require('@/assets/img/client_mmg.png')
+			},
+			{
+				image: require('@/assets/img/client_neoenergia.png')
+			},
+			{
+				image: require('@/assets/img/client_cemig.png')
+			},
+			{
+				image: require('@/assets/img/client_eletrodunas.png')
+			},
+			{
+				image: require('@/assets/img/client_isarep.png')
+			},
+			{
+				image: require('@/assets/img/client_isaintercolombia.png')
+			},
+			{
+				image: require('@/assets/img/client_isacteep.png')
+			},
+			{
+				image: require('@/assets/img/client_copel.png')
+			},
+			{
+				image: require('@/assets/img/client_unacem.png')
+			},
+			{
+				image: require('@/assets/img/client_pti.png')
+			}
+		],
+		europe: [
+			{
+				image: require('@/assets/img/client_red.png')
+			},
+			{
+				image: require('@/assets/img/client_iberdrola.png')
+			},
+			{
+				image: require('@/assets/img/client_ren.png')
+			},
+			{
+				image: require('@/assets/img/client_apg.png')
+			},
+			{
+				image: require('@/assets/img/client_50hertz.png')
+			},
+			{
+				image: require('@/assets/img/client_renault.png')
+			},
+			{
+				image: require('@/assets/img/client_cjr.png')
+			},
+			{
+				image: require('@/assets/img/client_finerge.png')
+			},
+			{
+				image: require('@/assets/img/client_secil.png')
+			},
+			{
+				image: require('@/assets/img/client_digital_tvilling.png')
+			},
+			{
+				image: require('@/assets/img/client_geometric.png')
+			},
+			{
+				image: require('@/assets/img/client_enerji.png')
+			}
+		],
+		australia: [
+			{
+				image: require('@/assets/img/client_tata.png')
+			},
+			{
+				image: require('@/assets/img/client_electranet.png')
+			},
+			{
+				image: require('@/assets/img/client_powergrid.png')
+			}
+		],
+		theWorld: [
+			{
+				image: require('@/assets/img/client_capgemini.png')
+			},
+			{
+				image: require('@/assets/img/client_hydroone.png')
+			},
+			{
+				image: require('@/assets/img/client_atlantica.png')
+			},
+			{
+				image: require('@/assets/img/client_fenix.png')
+			},
+			{
+				image: require('@/assets/img/client_intertechne.png')
+			},
+			{
+				image: require('@/assets/img/client_celepsa.png')
+			},
+			{
+				image: require('@/assets/img/client_transelec.png')
+			},
+			{
+				image: require('@/assets/img/client_bogota.png')
+			},
+			{
+				image: require('@/assets/img/client_coes.png')
+			},
+			{
+				image: require('@/assets/img/client_state_grid.png')
+			},
+			{
+				image: require('@/assets/img/client_hydroplus.png')
+			},
+			{
+				image: require('@/assets/img/client_corumba.png')
+			},
+			{
+				image: require('@/assets/img/client_ute.png')
+			},
+			{
+				image: require('@/assets/img/client_litsa.png')
+			},
+			{
+				image: require('@/assets/img/client_mmg.png')
+			},
+			{
+				image: require('@/assets/img/client_neoenergia.png')
+			},
+			{
+				image: require('@/assets/img/client_cemig.png')
+			},
+			{
+				image: require('@/assets/img/client_eletrodunas.png')
+			},
+			{
+				image: require('@/assets/img/client_isarep.png')
+			},
+			{
+				image: require('@/assets/img/client_isaintercolombia.png')
+			},
+			{
+				image: require('@/assets/img/client_isacteep.png')
+			},
+			{
+				image: require('@/assets/img/client_copel.png')
+			},
+			{
+				image: require('@/assets/img/client_unacem.png')
+			},
+			{
+				image: require('@/assets/img/client_pti.png')
+			},
+			{
+				image: require('@/assets/img/client_red.png')
+			},
+			{
+				image: require('@/assets/img/client_iberdrola.png')
+			},
+			{
+				image: require('@/assets/img/client_ren.png')
+			},
+			{
+				image: require('@/assets/img/client_apg.png')
+			},
+			{
+				image: require('@/assets/img/client_50hertz.png')
+			},
+			{
+				image: require('@/assets/img/client_renault.png')
+			},
+			{
+				image: require('@/assets/img/client_cjr.png')
+			},
+			{
+				image: require('@/assets/img/client_finerge.png')
+			},
+			{
+				image: require('@/assets/img/client_secil.png')
+			},
+			{
+				image: require('@/assets/img/client_digital_tvilling.png')
+			},
+			{
+				image: require('@/assets/img/client_geometric.png')
+			},
+			{
+				image: require('@/assets/img/client_enerji.png')
+			},
+			{
+				image: require('@/assets/img/client_tata.png')
+			},
+			{
+				image: require('@/assets/img/client_electranet.png')
+			},
+			{
+				image: require('@/assets/img/client_powergrid.png')
+			}
+		]
+	};
 
 	const locationCarousel: any = {
 		north: {
@@ -97,7 +329,7 @@ export const CarouselMap = ({ location }: IMyCarousel) => {
 				autoPlaySpeed={3000}
 				removeArrowOnDeviceType={['desktop', 'tablet', 'mobile']}
 			>
-				{cards.map((url, index) => (
+				{cardsCarousel[location].map((url: any, index: number) => (
 					<Box bg={'white'} key={index} mx={2} border={'0.72px solid #D8E1E9'} p={'11px'} borderRadius={'3.6px'}>
 						<Flex height={'54px'} position={'relative'}>
 							<Image
