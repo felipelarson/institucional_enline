@@ -37,9 +37,9 @@ export default function Slug() {
 						</BreadcrumbLink>
 					</BreadcrumbItem>
 				</Breadcrumb>
-				<Stack gap={5} mt={'20px'}>
+				<Stack gap={[4, 8, 12, 24]} mt={'20px'}>
 					<SlugHero />
-					<Text maxW={['100%', '80%']} fontSize={['14px', '18px']} fontWeight={400} pb={'16'} pt={['12px', '24px']}>
+					<Text maxW={['100%', '80%']} fontSize={['14px', '18px']} fontWeight={400} pt={['12px', '24px']}>
 						{SLUG_DATA[slug]?.description}
 					</Text>
 
@@ -50,7 +50,7 @@ export default function Slug() {
 					</Grid>
 				</Stack>
 			</ContainerMain>
-			<ContainerMain bgGradient={'linear(293.83deg, #D9E0FB 0%, #FFFFFF 100%)'} position={'relative'} zIndex={-1}>
+			<ContainerMain bgGradient={'linear(293.83deg, #D9E0FB 0%, #FFFFFF 100%)'} position={'relative'} zIndex={1}>
 				<Image
 					src={require(`@/assets/svg/bg-line.svg`)}
 					alt={'bg-line'}
@@ -65,7 +65,7 @@ export default function Slug() {
 						width: '100%'
 					}}
 				/>
-				<Stack gap={20}>
+				<Stack gap={28}>
 					<TitleSection
 						title={SLUG_DATA[slug]?.titleSection as string}
 						subtitle={SLUG_DATA[slug]?.subtitleSection as string}
@@ -95,7 +95,7 @@ export default function Slug() {
 					{/* start card */}
 					<Grid templateColumns={['repeat(auto-fit, minmax(238px, 1fr))', 'repeat(auto-fit, minmax(338px, 1fr))']} gap={[3, 6]}>
 						{SLUG_DATA[slug]?.cardCustomer.map((item, index) => (
-							<Card key={index} px={4} py={5} bg={'white'} border={'1px solid #D8E1E9'} borderRadius={5}>
+							<Card key={index} px={4} py={5} bg={'white'} border={'1px solid #D8E1E9'} borderRadius={5} boxShadow={'none'}>
 								<Stack bg={'#F1F6FF'} p={4} borderRadius={5} mb={6} h={'250px'} justifyContent={'space-between'}>
 									<Box
 										bg={'white'}

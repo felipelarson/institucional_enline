@@ -52,9 +52,9 @@ export const TECHNOLOGY_DATA: { [key: string]: ITechnologyData } = {
 				text: 'Efficiently manage power flows and eliminate the need for costly infrastructure upgrades.'
 			}
 		],
-		titleBanner: "Discover how Enline's Dynamic Line Rating can transform your power grid operations",
+		titleBanner: "Enline's DLR Solutions",
 		descriptionBanner:
-			"Our landslide detection solutions are a part of Enline's suite of advanced infrastructure management tools, including Enline LiveView, Enline PredictPro, and Enline SafeGuard. Together, these tools provide comprehensive monitoring, predictive analytics, and risk management strategies to ensure the safety and integrity of your assets.",
+			"Our Dynamic Line Rating solutions are seamlessly integrated with Enline's suite of advanced energy management products, including Enline LiveView, Enline PredictPro, and Enline OptiMax. Together, these tools provide comprehensive monitoring, predictive analytics, and optimization strategies to ensure efficient power transmission and distribution.",
 		buttonList: [
 			{
 				title: 'Enline LiveView',
@@ -89,7 +89,7 @@ export const TECHNOLOGY_DATA: { [key: string]: ITechnologyData } = {
 		subtitleBannerMobile: 'Enhance Safety with Real-time Monitoring',
 		descriptionBannerMobile: "Mitigate Geotechnical Hazards with Enline's Advanced Landslide Detection Solutions.",
 		description:
-			"Our Dynamic Line Rating solutions are seamlessly integrated with Enline's suite of advanced energy management products, including Enline LiveView, Enline PredictPro, and Enline OptiMax. Together, these tools provide comprehensive monitoring, predictive analytics, and optimization strategies to ensure efficient power transmission and distribution.",
+			"Landslide detection is an essential technology that allows infrastructure managers to safeguard their assets in regions prone to geotechnical hazards. Enline's landslide detection solutions provide real-time monitoring and data-driven insights to promptly identify potential threats, enhancing safety, reducing risk, and maximizing asset protection.",
 		cardList: [
 			{
 				icon: 'realTime',
@@ -129,10 +129,10 @@ export const TECHNOLOGY_DATA: { [key: string]: ITechnologyData } = {
 		],
 		sectionList: [
 			{
-				title: "Make informed decisions and respond to issues quickly with Enline LiveView's real-time monitoring capabilities, keeping your energy infrastructure operating at peak performance.",
-				text: "A hydroelectric plant utilized Enline LiveView to access real-time data on their turbines' performance. The immediate detection of a performance anomaly allowed the plant to address the issue promptly, avoiding potential damages and a costly shutdown, resulting in a 50% reduction in unplanned maintenance events.",
+				title: "A leading railway company implemented Enline's Landslide Detection solution, enabling them to monitor potential geotechnical hazards along their rail network.",
+				text: 'By leveraging real-time data and advanced analytics, the company was able to promptly respond to potential landslides, avoiding costly repairs and service disruptions. As a result, they achieved a 30% reduction in geotechnical-related incidents and a 20% reduction in associated costs.',
 				reverse: false,
-				textImage: '50% reduction in unplanned maintenance events',
+				textImage: '30% reduction in geotechnical-related incidents',
 				titleCardBanner: "Discover how Enline's Landslide Detection enhance safety and reliability in your operations."
 			}
 		]
@@ -184,11 +184,11 @@ export const TECHNOLOGY_DATA: { [key: string]: ITechnologyData } = {
 		],
 		sectionList: [
 			{
-				title: "Make informed decisions and respond to issues quickly with Enline LiveView's real-time monitoring capabilities, keeping your energy infrastructure operating at peak performance.",
-				text: "A hydroelectric plant utilized Enline LiveView to access real-time data on their turbines' performance. The immediate detection of a performance anomaly allowed the plant to address the issue promptly, avoiding potential damages and a costly shutdown, resulting in a 50% reduction in unplanned maintenance events.",
+				title: "A global energy company adopted Enline's sensorless monitoring solution to manage their vast network of energy assets.",
+				text: 'The maintenance-free approach eliminated the need for physical sensors and fieldwork, resulting in a 40% reduction in operational costs. Real-time data collection and analytics allowed the company to optimize asset performance, leading to a 10% increase in overall efficiency and a 25% extension of asset lifespans.',
 				reverse: false,
-				textImage: '50% reduction in unplanned maintenance events',
-				titleCardBanner: "Discover how Enline's Landslide Detection enhance safety and reliability in your operations."
+				textImage: '25% extension of asset lifespans',
+				titleCardBanner: "Discover how Enline's Sensorless Monitoring enhance safety and reliability in your operations."
 			}
 		]
 	},
@@ -232,18 +232,18 @@ export const TECHNOLOGY_DATA: { [key: string]: ITechnologyData } = {
 				urlButton: '/solutions/predictpro'
 			},
 			{
-				title: 'Enline OptiMax',
-				link: require(`@/assets/svg/icon_optimax.svg`),
-				urlButton: '/solutions/optimax'
+				title: 'Enline SafeGuard',
+				link: require(`@/assets/svg/icon_safeguard.svg`),
+				urlButton: '/solutions/safeguard'
 			}
 		],
 		sectionList: [
 			{
-				title: "Make informed decisions and respond to issues quickly with Enline LiveView's real-time monitoring capabilities, keeping your energy infrastructure operating at peak performance.",
-				text: "A hydroelectric plant utilized Enline LiveView to access real-time data on their turbines' performance. The immediate detection of a performance anomaly allowed the plant to address the issue promptly, avoiding potential damages and a costly shutdown, resulting in a 50% reduction in unplanned maintenance events.",
+				title: "A regional utility company implemented Enline's Vegetation Monitoring technology to proactively manage vegetation growth around their power lines.",
+				text: "The advanced analytics and real-time insights provided by Enline's solution enabled the utility to optimize maintenance operations and significantly reduce the risk of outages caused by tree contacts. As a result, the company experienced a 30% decrease in vegetation-related outages and a 20% reduction in maintenance costs.",
 				reverse: false,
-				textImage: '50% reduction in unplanned maintenance events',
-				titleCardBanner: "Discover how Enline's Landslide Detection enhance safety and reliability in your operations."
+				textImage: '20% reduction in maintenance costs',
+				titleCardBanner: "Discover how Enline's Vegetation Monitoring enhance safety and reliability in your operations."
 			}
 		]
 	}

@@ -79,7 +79,7 @@ export const SlugHero = () => {
 					border={'1px solid #F1F6FF'}
 					boxShadow={'0px 20px 40px rgba(8, 29, 71, 0.05)'}
 					borderRadius={'20px'}
-					maxW={{ lg: '838px', xl: '970px' }}
+					maxW={{ lg: '828px', xl: '930px' }}
 				>
 					<Flex flex={1} position={'relative'}>
 						<Stack flex={1.8} color={'white'} gap={10}>
@@ -88,18 +88,21 @@ export const SlugHero = () => {
 								color={'white'}
 								rounded={'full'}
 								size={'degrade'}
-								w={'288px'}
-								h={'fit-content'}
+								// w={'288px'}
+								w={'fit-content'}
+								h={'83px'}
 								justifyContent={'flex-start'}
 								pl={'5px'}
 								leftIcon={
-									<Flex bg={'white'} w={'39px'} h={'39px'} rounded={'full'} alignItems={'center'} justifyContent={'center'}>
-										<Image src={SLUG_DATA[slug]?.hero.iconButton} alt="icon_liveview" />
+									<Flex bg={'white'} rounded={'full'} alignItems={'center'} justifyContent={'center'}>
+										<Image src={SLUG_DATA[slug]?.hero.iconButton} alt="icon_liveview" width={60} />
 									</Flex>
 								}
-								p={'8.4px 25.2px 8.4px 8.4px'}
+								p={'8.4px 25.2px 8.4px 13px'}
 							>
-								<Text fontSize={'20px'}>{SLUG_DATA[slug]?.hero.textButton}</Text>
+								<Text fontSize={'30px'} px={3}>
+									{SLUG_DATA[slug]?.hero.textButton}
+								</Text>
 							</Button>
 							<Heading as="h2" fontSize={'3xl'} fontWeight={'700'} textAlign={['center', 'center', 'left', 'left']} w={'420px'}>
 								<Text>
@@ -117,12 +120,12 @@ export const SlugHero = () => {
 							<Image
 								src={SLUG_DATA[slug]?.hero.imgScreen}
 								alt="image notebook"
+								width={650}
 								style={{
 									position: 'absolute',
 									top: '80%',
 									left: '85%',
-									transform: 'translate(-50%, -50%)',
-									width: '570px'
+									transform: 'translate(-50%, -50%)'
 								}}
 							/>
 						</Box>

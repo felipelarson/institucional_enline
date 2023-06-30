@@ -58,23 +58,23 @@ export const ListUseCases = ({ reverse, title, text, textImage, image }: IListUs
 					</Flex>
 				</Flex>
 			) : (
-				<Flex flexDirection={reverse ? 'row-reverse' : 'row'} gap={10}>
+				<Flex flexDirection={reverse ? 'row-reverse' : 'row'} gap={10} px={'40px'}>
 					<Stack flex={1} gap={10}>
-						<Text fontSize={'0.675rem'} lineHeight={'140%'}>
+						<Text fontSize={'1.125rem'} lineHeight={'140%'}>
 							{title}
 						</Text>
-						<Box bg={'white'} p={10} borderRadius={'5px'} boxShadow={'sm'}>
-							<Text fontSize={'0.675rem'} lineHeight={'140%'} textAlign={'center'}>
+						<Box bg={'white'} p={10} borderRadius={'5px'} boxShadow={'sm'} border={'1px solid #D8E1E9'}>
+							<Text fontSize={'0.875rem'} lineHeight={'140%'} textAlign={'start'}>
 								{text}
 							</Text>
 						</Box>
 					</Stack>
 					<Flex flex={1} justifyContent={'center'} alignItems={'center'} width={'full'} position={'relative'}>
-						<Image src={imageList[image as keyof typeof imageList]} alt={''} height={296} />
+						<Image src={imageList[image as keyof typeof imageList]} alt={'images'} fill={true} />
 						<Box
 							position={'absolute'}
 							bottom={'-30%'}
-							left={reverse ? '20%' : 'auto'}
+							left={reverse ? '25%' : 'auto'}
 							right={'-40%'}
 							transform={'translate(-50%, -50%)'}
 							bg={'purple.500'}

@@ -30,7 +30,7 @@ export const Banner = ({ title, titleColor, description, descriptionColor }: IBa
 						</Heading>
 					)}
 				</Stack>
-				<Text color={'#83919E'} fontSize={['md', 'lg', 'xl']} maxW={'540px'}>
+				<Text color={'#83919E'} fontSize={['md', 'lg', 'xl']} maxW={'900px'}>
 					{description}
 					{descriptionColor && (
 						<Text as="span" color={'purple.500'}>

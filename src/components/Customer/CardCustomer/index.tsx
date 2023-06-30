@@ -11,7 +11,7 @@ export const CardCustomer = () => {
 	return (
 		<Grid gap={[4, 8]} templateColumns={'repeat(auto-fit, minmax(330px, 1fr))'} mt={[10, 20]}>
 			{CARD_CUSTUMER.map((item, index) => (
-				<Card key={index} px={4} py={5} bg={'white'} border={'1px solid #D8E1E9'} borderRadius={5}>
+				<Card key={index} px={4} py={5} bg={'white'} boxShadow={'none'} border={'1px solid #D8E1E9'} borderRadius={5}>
 					<Stack bg={'#F1F6FF'} p={4} borderRadius={5} mb={6} h={'250px'} justifyContent={'space-between'}>
 						<Box
 							bg={'white'}

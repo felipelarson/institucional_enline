@@ -139,24 +139,24 @@ export const SLUG_DATA: { [key: string]: ISlugData } = {
 		descriptionSection: 'Real-time Insights for Smarter Decisions and Enhanced Performance.',
 		sectionList: [
 			{
-				title: 'Asset Management',
-				text: 'Enline LiveView provides real-time insights into your energy assets, allowing you to monitor performance, identify potential issues, and make informed decisions for proactive maintenance.',
+				title: 'Experience significant improvements in energy infrastructure efficiency with Enline OptiMax, which intelligently identifies and addresses areas for optimization.',
+				text: 'A large manufacturing company implemented Enline OptiMax and saw a 20% increase in energy efficiency, leading to substantial cost savings and reduced environmental impact.',
 				reverse: false,
-				textImage: '50% reduction in unplanned maintenance events',
+				textImage: ' 20% increase in energy efficiency',
 				image: 'img_optimax_1'
 			},
 			{
-				title: 'Energy Management',
-				text: 'Enline LiveView enables you to monitor your energy infrastructure in real-time, allowing you to optimize performance, reduce energy losses, and minimize operational costs.',
+				title: 'Maximize the longevity of your energy assets with Enline OptiMax, ensuring that they perform at their full potential.',
+				text: 'A power generation company utilized Enline OptiMax`s advanced analytics to optimize asset performance, resulting in a 25% extension of asset lifespan and a 15% reduction in maintenance costs.',
 				reverse: true,
-				textImage: 'Increasing overall energy production by 10%.',
+				textImage: '15% reduction in maintenance costs',
 				image: 'img_optimax_2'
 			},
 			{
-				title: 'Risk Management',
-				text: 'Enline LiveView provides real-time insights into your energy assets, allowing you to monitor performance, identify potential issues, and make informed decisions for proactive maintenance.',
+				title: 'Leverage Enline OptiMax`s ability to develop tailored optimization plans, addressing the unique challenges and requirements of your energy infrastructure',
+				text: ' A regional distribution system operator (DSO) employed Enline OptiMax to create a customized strategy, which led to a 10% improvement in energy output and a 30% decrease in equipment downtime.',
 				reverse: false,
-				textImage: 'Reduce operational costs by 20%.',
+				textImage: '30% decrease in equipment downtime',
 				image: 'img_optimax_3'
 			}
 		],
@@ -242,24 +242,24 @@ export const SLUG_DATA: { [key: string]: ISlugData } = {
 		descriptionSection: 'Real-time Insights for Smarter Decisions and Enhanced Performance.',
 		sectionList: [
 			{
-				title: 'Asset Management',
-				text: 'Enline LiveView provides real-time insights into your energy assets, allowing you to monitor performance, identify potential issues, and make informed decisions for proactive maintenance.',
+				title: 'Leverage the power of Enline PredictPro`s AI-driven algorithms to accurately forecast asset performance, enabling better planning and resource allocation.',
+				text: 'A renewable energy provider utilized Enline PredictPro to improve the accuracy of their wind farm performance forecasts, leading to a 15% increase in energy output and optimized resource management.',
 				reverse: false,
-				textImage: '50% reduction in unplanned maintenance events',
+				textImage: '15% increase in energy output',
 				image: 'img_predictivepro_1'
 			},
 			{
-				title: 'Energy Management',
-				text: 'Enline LiveView enables you to monitor your energy infrastructure in real-time, allowing you to optimize performance, reduce energy losses, and minimize operational costs.',
+				title: 'Monitor the health of your energy assets continuously with Enline PredictPro, allowing you to address potential issues and extend asset lifespans.',
+				text: 'A solar farm operator leveraged Enline LiveView`s intuitive visualizations to monitor the performance of their solar panels. By quickly identifying underperforming panels, they were able to schedule targeted maintenance, increasing overall energy production by 10%.',
 				reverse: true,
 				textImage: 'Increasing overall energy production by 10%.',
 				image: 'img_predictivepro_2'
 			},
 			{
-				title: 'Risk Management',
-				text: 'Enline LiveView provides real-time insights into your energy assets, allowing you to monitor performance, identify potential issues, and make informed decisions for proactive maintenance.',
+				title: 'Utilize Enline PredictPro`s advanced analytics to proactively identify risks and implement targeted mitigation strategies, ensuring a more reliable and secure energy infrastructure.',
+				text: ' An industrial facility deployed Enline PredictPro to assess and address potential risks, leading to a 30% decrease in equipment failures and a more resilient energy network.',
 				reverse: false,
-				textImage: 'Reduce operational costs by 20%.',
+				textImage: '30% decrease in equipment failures.',
 				image: 'img_predictivepro_3'
 			}
 		],
@@ -345,24 +345,24 @@ export const SLUG_DATA: { [key: string]: ISlugData } = {
 		descriptionSection: 'Real-time Insights for Smarter Decisions and Enhanced Performance.',
 		sectionList: [
 			{
-				title: 'Asset Management',
-				text: 'Enline LiveView provides real-time insights into your energy assets, allowing you to monitor performance, identify potential issues, and make informed decisions for proactive maintenance.',
+				title: 'Benefit from Enline SafeGuard`s advanced monitoring and predictive analytics, which help you identify and address potential wildfire risks, safeguarding your energy infrastructure and surrounding communities.',
+				text: 'A utility company implemented Enline SafeGuard to proactively monitor and mitigate wildfire risks. The system`s predictive analytics identified areas prone to ignition, enabling targeted vegetation management and reducing the likelihood of wildfires by 40%.',
 				reverse: false,
-				textImage: '50% reduction in unplanned maintenance events',
+				textImage: 'Reducing the likelihood of wildfires by 40%.',
 				image: 'img_safeguard_1'
 			},
 			{
-				title: 'Energy Management',
-				text: 'Enline LiveView enables you to monitor your energy infrastructure in real-time, allowing you to optimize performance, reduce energy losses, and minimize operational costs.',
+				title: 'Equipment Failure Mitigation: Leverage Enline SafeGuard to detect early signs of equipment failure and take preventive action, ensuring the safety and reliability of your energy infrastructure.',
+				text: 'A regional DSO utilized Enline SafeGuard to detect early signs of equipment failure in their network. The system`s AI-driven analytics identified a potential transformer issue, allowing the DSO to perform maintenance and prevent a costly outage, reducing equipment downtime by 35%.',
 				reverse: true,
-				textImage: 'Increasing overall energy production by 10%.',
+				textImage: 'Reducing equipment downtime by 35%',
 				image: 'img_safeguard_2'
 			},
 			{
-				title: 'Risk Management',
-				text: 'Enline LiveView provides real-time insights into your energy assets, allowing you to monitor performance, identify potential issues, and make informed decisions for proactive maintenance.',
+				title: 'Enhanced Resilience to Extreme Weather: Strengthen your energy infrastructure`s ability to withstand and adapt to extreme weather events with Enline SafeGuard, minimizing the impact of potential hazards.',
+				text: 'A TSO facing recurrent storm-related disruptions adopted Enline SafeGuard to enhance their network`s resilience to extreme weather. The system`s real-time monitoring and predictive capabilities allowed the TSO to identify and address vulnerabilities, reducing storm-related outages by 50%.',
 				reverse: false,
-				textImage: 'Reduce operational costs by 20%.',
+				textImage: 'Reducing storm-related outages by 50%',
 				image: 'img_safeguard_3'
 			}
 		],
@@ -448,24 +448,24 @@ export const SLUG_DATA: { [key: string]: ISlugData } = {
 		descriptionSection: 'Real-time Insights for Smarter Decisions and Enhanced Performance.',
 		sectionList: [
 			{
-				title: 'Asset Management',
-				text: 'Enline LiveView provides real-time insights into your energy assets, allowing you to monitor performance, identify potential issues, and make informed decisions for proactive maintenance.',
+				title: 'Optimized Project Planning: Utilize Enline SmartDesign`s advanced simulation tools to create efficient and cost-effective energy project plans, maximizing return on investment.',
+				text: 'A renewable energy developer leveraged Enline SmartDesign to optimize the layout of a solar farm project. The simulation tools evaluated millions of scenarios, identifying the most efficient design and increasing the project`s energy production by 20%.',
 				reverse: false,
-				textImage: '50% reduction in unplanned maintenance events',
+				textImage: 'Increasing the project`s energy production by 20%',
 				image: 'img_smartdesign_1'
 			},
 			{
-				title: 'Energy Management',
-				text: 'Enline LiveView enables you to monitor your energy infrastructure in real-time, allowing you to optimize performance, reduce energy losses, and minimize operational costs.',
+				title: 'Reduced Uncertainty in Decision-making: Benefit from Enline SmartDesign`s comprehensive analysis, which considers various factors such as geography, weather, and technology, providing you with the necessary insights to make informed decisions.',
+				text: 'A wind farm operator employed Enline SmartDesign to assess the feasibility of a new wind turbine installation. The platform`s detailed analysis enabled the operator to choose the most suitable turbine model and location, reducing uncertainty and increasing annual energy production by 15%.',
 				reverse: true,
-				textImage: 'Increasing overall energy production by 10%.',
+				textImage: 'Annual energy production by 15%.',
 				image: 'img_smartdesign_2'
 			},
 			{
-				title: 'Risk Management',
-				text: 'Enline LiveView provides real-time insights into your energy assets, allowing you to monitor performance, identify potential issues, and make informed decisions for proactive maintenance.',
+				title: 'Accelerated Project Execution: Streamline your energy project development process with Enline SmartDesign, minimizing delays and ensuring timely completion.',
+				text: 'An engineering firm working on a hydroelectric project utilized Enline SmartDesign to optimize their project timeline. The platform`s advanced planning capabilities enabled the firm to identify potential bottlenecks, resulting in a 25% reduction in project completion time and minimized costs.',
 				reverse: false,
-				textImage: 'Reduce operational costs by 20%.',
+				textImage: '25% reduction in project completion time',
 				image: 'img_smartdesign_3'
 			}
 		],
