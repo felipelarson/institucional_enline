@@ -1,9 +1,10 @@
 interface ITechnologyData {
 	urlBanner: string;
 	urlBannerMobile: string;
-	titleBannerMobile: string;
-	subtitleBannerMobile: string;
-	descriptionBannerMobile: string;
+	titleBannerHero: string;
+	subtitleBannerHero: string;
+	descriptionBannerHero: string;
+	urlImageBannerHero: string;
 	description: string;
 	cardList: {
 		icon: string;
@@ -30,9 +31,10 @@ export const TECHNOLOGY_DATA: { [key: string]: ITechnologyData } = {
 	dlr: {
 		urlBanner: require('@/assets/img/banner_title_dlr.png'),
 		urlBannerMobile: require('@/assets/img/screen_dlr_tech.png'),
-		titleBannerMobile: 'Dynamic Line Rating(DLR)',
-		subtitleBannerMobile: 'Unlock the Full Potential of Your Power Lines',
-		descriptionBannerMobile: "Enhance Grid Efficiency, Reliability, and Capacity with Enline's Dynamic Line Rating Solutions.",
+		titleBannerHero: 'Dynamic Line Rating (DLR)',
+		subtitleBannerHero: 'Unlock the Full Potential of Your Power Lines',
+		descriptionBannerHero: "Enhance Grid Efficiency, Reliability, and Capacity with Enline's Dynamic Line Rating Solutions.",
+		urlImageBannerHero: require('@/assets/img/screen_dlr_tech.png'),
 		description:
 			"Dynamic Line Rating (DLR) is a cutting-edge technology that enables power grid operators to optimize the capacity and performance of their transmission lines. By providing real-time monitoring and data-driven insights, Enline's DLR solutions help improve grid reliability, reduce congestion, and maximize the utilization of existing assets.",
 		cardList: [
@@ -85,9 +87,10 @@ export const TECHNOLOGY_DATA: { [key: string]: ITechnologyData } = {
 	landslide: {
 		urlBanner: require('@/assets/img/banner_title_landslide.png'),
 		urlBannerMobile: require('@/assets/img/screen_landslide.png'),
-		titleBannerMobile: 'Landslide Detection',
-		subtitleBannerMobile: 'Enhance Safety with Real-time Monitoring',
-		descriptionBannerMobile: "Mitigate Geotechnical Hazards with Enline's Advanced Landslide Detection Solutions.",
+		titleBannerHero: 'Landslide Detection',
+		subtitleBannerHero: 'Enhance Safety with Real-time Monitoring',
+		descriptionBannerHero: "Mitigate Geotechnical Hazards with Enline's Advanced Landslide Detection Solutions.",
+		urlImageBannerHero: require('@/assets/img/screen_landslide.png'),
 		description:
 			"Landslide detection is an essential technology that allows infrastructure managers to safeguard their assets in regions prone to geotechnical hazards. Enline's landslide detection solutions provide real-time monitoring and data-driven insights to promptly identify potential threats, enhancing safety, reducing risk, and maximizing asset protection.",
 		cardList: [
@@ -140,9 +143,10 @@ export const TECHNOLOGY_DATA: { [key: string]: ITechnologyData } = {
 	sensorless: {
 		urlBanner: require('@/assets/img/banner_title_sensorless.png'),
 		urlBannerMobile: require('@/assets/img/screen_sensorless.png'),
-		titleBannerMobile: 'Sensorless Monitoring',
-		subtitleBannerMobile: 'Revolutionizing Asset Monitoring',
-		descriptionBannerMobile: "Embrace the Future of Asset Management with Enline's Sensorless Monitoring Solutions.",
+		titleBannerHero: 'Sensorless Monitoring',
+		subtitleBannerHero: 'Revolutionizing Asset Monitoring',
+		descriptionBannerHero: "Embrace the Future of Asset Management with Enline's Sensorless Monitoring Solutions.",
+		urlImageBannerHero: require('@/assets/img/screen_sensorless.png'),
 		description:
 			"Sensorless technology is a groundbreaking advancement in the field of asset monitoring, offering a maintenance-free and cost-effective approach to managing your critical infrastructure. Enline's sensorless monitoring solutions provide real-time data and insights without the need for physical sensors, streamlining operations and reducing maintenance costs.",
 		cardList: [
@@ -195,9 +199,10 @@ export const TECHNOLOGY_DATA: { [key: string]: ITechnologyData } = {
 	vegetation_monitoring: {
 		urlBanner: require('@/assets/img/banner_title_vegetation.png'),
 		urlBannerMobile: require('@/assets/img/screen_vegetation.png'),
-		titleBannerMobile: 'Vegetation Monitoring',
-		subtitleBannerMobile: 'Protect Your Power Grid from Vegetation Threats',
-		descriptionBannerMobile: "Enhance Grid Reliability and Safety with Enline's Advanced Vegetation Monitoring Solutions.",
+		titleBannerHero: 'Vegetation Monitoring',
+		subtitleBannerHero: 'Protect Your Power Grid from Vegetation Threats',
+		descriptionBannerHero: "Enhance Grid Reliability and Safety with Enline's Advanced Vegetation Monitoring Solutions.",
+		urlImageBannerHero: require('@/assets/img/screen_vegetation.png'),
 		description:
 			"Vegetation growth around power lines poses significant risks to grid reliability and safety. Enline's Vegetation Monitoring technology offers a comprehensive approach to detecting, analyzing, and managing vegetation encroachment on your power infrastructure. Our advanced solutions provide real-time insights and predictive analytics to help you maintain a safe and efficient energy network.",
 		cardList: [

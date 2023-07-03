@@ -47,18 +47,18 @@ export default function SlugTechnology() {
 							boxShadow={'0px 20px 40px rgba(8, 29, 71, 0.05)'}
 							borderRadius={'20px'}
 							width={['100%', '90%']}
-							mt={'11rem'}
+							mt={'10rem'}
 						>
 							<Flex flex={1} position={'relative'} direction={'column'}>
 								<Stack color={'white'} gap={[4, 6]} justify={'center'} w={'100%'} mt={'50px'}>
 									<Text fontSize={'0.64rem'} lineHeight={'140%'} fontWeight={400} color={'#FFAE33'}>
-										{TECHNOLOGY_DATA[slug]?.titleBannerMobile}
+										{TECHNOLOGY_DATA[slug]?.titleBannerHero}
 									</Text>
 									<Heading as={'h2'} fontSize={'1.024rem'} lineHeight={'100%'}>
-										{TECHNOLOGY_DATA[slug]?.subtitleBannerMobile}
+										{TECHNOLOGY_DATA[slug]?.subtitleBannerHero}
 									</Heading>
 									<Text fontSize={'0.64rem'} fontWeight={400} lineHeight={'140%'}>
-										{TECHNOLOGY_DATA[slug]?.descriptionBannerMobile}
+										{TECHNOLOGY_DATA[slug]?.descriptionBannerHero}
 									</Text>
 								</Stack>
 								<Box flex={2} color={'white'}>
@@ -78,9 +78,48 @@ export default function SlugTechnology() {
 							</Flex>
 						</Box>
 					) : (
-						<Flex width={'108%'} ml={'-4%'}>
-							<Image src={TECHNOLOGY_DATA[slug]?.urlBanner} alt={`Banner ${slug}`} />
-						</Flex>
+						// <Flex width={'108%'} ml={'-4%'}>
+						// 	<Image src={TECHNOLOGY_DATA[slug]?.urlBanner} alt={`Banner ${slug}`} />
+						// </Flex>
+						<Box
+							bgGradient={'linear(106.68deg, #0E0E0F 5.44%, #33296D 106.62%)'}
+							p={'48px'}
+							isolation={'isolate'}
+							border={'1px solid #F1F6FF'}
+							boxShadow={'0px 20px 40px rgba(8, 29, 71, 0.05)'}
+							borderRadius={'20px'}
+							width={'100%'}
+							position={'relative'}
+							mt={'1.3rem'}
+						>
+							<Flex maxW={'470px'}>
+								<Stack flex={1.8} color={'white'} gap={10}>
+									<Text fontSize={'18px'} lineHeight={'140%'} fontWeight={400} color={'#FFAE33'}>
+										{TECHNOLOGY_DATA[slug]?.titleBannerHero}
+									</Text>
+									<Heading as={'h2'} fontSize={'32px'} lineHeight={'100%'}>
+										{TECHNOLOGY_DATA[slug]?.subtitleBannerHero}
+									</Heading>
+									<Text fontSize={'20px'} fontWeight={400} lineHeight={'25px'}>
+										{TECHNOLOGY_DATA[slug]?.descriptionBannerHero}
+									</Text>
+								</Stack>
+							</Flex>
+							<Box color={'white'}>
+								<Image
+									src={TECHNOLOGY_DATA[slug]?.urlImageBannerHero}
+									alt={'Image career'}
+									style={{
+										position: 'absolute',
+										top: '70%',
+										left: '75%',
+										transform: 'translate(-50%, -50%)',
+										height: '297px',
+										width: '486px'
+									}}
+								/>
+							</Box>
+						</Box>
 					)}
 					<Text maxW={['100%', '80%']} fontSize={['14px', '18px']} fontWeight={400} lineHeight={'140%'}>
 						{TECHNOLOGY_DATA[slug]?.description}
