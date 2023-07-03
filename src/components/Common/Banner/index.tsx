@@ -1,5 +1,6 @@
 import { Card, Heading, Stack, Text } from '@chakra-ui/react';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 
 interface IBannerProps {
 	title: string;
@@ -9,10 +10,13 @@ interface IBannerProps {
 }
 
 export const Banner = ({ title, titleColor, description, descriptionColor }: IBannerProps) => {
+	const router = useRouter();
+	const isShorterBanner = router.pathname === '/learn' || router.pathname === '/updates';
+
 	return (
 		<Card
 			bgGradient={'linear(to-b, #F2F7FF, #D7DEFA)'}
-			w={'full'}
+			w={['full', 'full', 'full', isShorterBanner ? '63%' : 'full']}
 			border={'1px solid #D8E1E9'}
 			p={'36px'}
 			position={'relative'}

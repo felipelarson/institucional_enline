@@ -23,15 +23,12 @@ export const Contact = () => {
 						<CardBody>
 							<Stack gap={4}>
 								<Box>
-									<Heading fontSize={'14px'}>HEADQUARTERS</Heading>
 									<Text fontSize={'14px'}>Mirandela - Portugal</Text>
 								</Box>
 								<Box>
-									<Heading fontSize={'14px'}>TECHNOLOGICAL DEVELOPMENT CENTER</Heading>
 									<Text fontSize={'14px'}>São Paulo - Brasil</Text>
 								</Box>
 								<Box>
-									<Heading fontSize={'14px'}>REGIONAL SALES OFFICES</Heading>
 									<Text fontSize={'14px'}>Erlangen, Germany</Text>
 									<Text fontSize={'14px'}>Lima, Peru</Text>
 								</Box>

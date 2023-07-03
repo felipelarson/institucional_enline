@@ -18,7 +18,8 @@ import {
 	useColorModeValue,
 	useBreakpointValue,
 	useDisclosure,
-	Grid
+	Grid,
+	Container
 } from '@chakra-ui/react';
 import Image from 'next/image';
 import NextLink from 'next/link';
@@ -29,64 +30,66 @@ export const Navbar = () => {
 	const { isOpen, onToggle } = useDisclosure();
 
 	return (
-		<Box position={'fixed'} zIndex={3} w={'100%'}>
-			<Flex
-				bg={useColorModeValue('gray.50', 'gray.800')}
-				color={useColorModeValue('gray.500', 'white')}
-				minH={'78px'}
-				py={{ base: 2 }}
-				px={{ base: 4 }}
-				align={'center'}
-				boxShadow={'0px 5px 10px rgba(8, 29, 71, 0.05)'}
-			>
-				<Flex flex={{ base: 1, xl: 'auto' }} ml={{ base: -2 }} display={{ base: 'flex', xl: 'none' }}>
-					<IconButton
-						onClick={onToggle}
-						icon={isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />}
-						variant={'ghost'}
-						aria-label={'Toggle Navigation'}
-					/>
-				</Flex>
-				<Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
-					<Box
-						as={NextLink}
-						href={'/'}
-						textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
-						fontFamily={'heading'}
-						color={useColorModeValue('gray.800', 'white')}
-						width={{ base: '100px', lg: '100px', xl: '120px' }}
-					>
-						<Image src={require('@/assets/svg/brand_enline.svg')} alt={"Enline's brand"} />
-					</Box>
-
-					<Flex display={{ base: 'none', xl: 'flex' }} ml={10}>
-						<DesktopNav />
+		<Box position={'fixed'} zIndex={3} w={'100%'} bg={useColorModeValue('gray.50', 'gray.800')} boxShadow={'0px 5px 10px rgba(8, 29, 71, 0.05)'}>
+			<Container maxW={'7xl'}>
+				<Flex
+					// bg={useColorModeValue('gray.50', 'gray.800')}
+					color={useColorModeValue('gray.500', 'white')}
+					minH={'78px'}
+					py={{ base: 2 }}
+					px={{ base: 4 }}
+					align={'center'}
+					// boxShadow={'0px 5px 10px rgba(8, 29, 71, 0.05)'}
+				>
+					<Flex flex={{ base: 1, xl: 'auto' }} ml={{ base: -2 }} display={{ base: 'flex', xl: 'none' }}>
+						<IconButton
+							onClick={onToggle}
+							icon={isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />}
+							variant={'ghost'}
+							aria-label={'Toggle Navigation'}
+						/>
 					</Flex>
+					<Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
+						<Box
+							as={NextLink}
+							href={'/'}
+							textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
+							fontFamily={'heading'}
+							color={useColorModeValue('gray.800', 'white')}
+							width={{ base: '100px', lg: '100px', xl: '120px' }}
+						>
+							<Image src={require('@/assets/svg/brand_enline.svg')} alt={"Enline's brand"} />
+						</Box>
+
+						<Flex display={{ base: 'none', xl: 'flex' }} ml={10}>
+							<DesktopNav />
+						</Flex>
+					</Flex>
+
+					<Stack flex={{ base: 1, xl: 0 }} justify={'flex-end'} direction={'row'} spacing={6}>
+						<Button
+							as={NextLink}
+							href={'https://questionnaire.enline-transmission.com/'}
+							target={'_blank'}
+							display={{ base: 'none', md: 'inline-flex' }}
+							fontSize={'sm'}
+							fontWeight={600}
+							color={'white'}
+							bg={'green.300'}
+							_hover={{
+								bg: 'green.400'
+							}}
+							rounded={'full'}
+						>
+							Schedule a meeting
+						</Button>
+					</Stack>
 				</Flex>
 
-				<Stack flex={{ base: 1, xl: 0 }} justify={'flex-end'} direction={'row'} spacing={6}>
-					<Button
-						as={NextLink}
-						href={'https://questionnaire.enline-transmission.com/'}
-						target={'_blank'}
-						display={{ base: 'none', md: 'inline-flex' }}
-						fontSize={'sm'}
-						fontWeight={600}
-						color={'white'}
-						bg={'green.300'}
-						_hover={{
-							bg: 'green.400'
-						}}
-						rounded={'full'}
-					>
-						Schedule a meeting
-					</Button>
-				</Stack>
-			</Flex>
-
-			<Collapse in={isOpen} animateOpacity>
-				<MobileNav />
-			</Collapse>
+				<Collapse in={isOpen} animateOpacity>
+					<MobileNav />
+				</Collapse>
+			</Container>
 		</Box>
 	);
 };

@@ -76,7 +76,6 @@ export default function Careers() {
 										If you share our vision and are eager to make a difference, we invite you to explore our exciting career
 										opportunities.
 									</Text>
-									F
 								</Stack>
 								<Box flex={2} color={'white'}>
 									<Image
@@ -96,7 +95,7 @@ export default function Careers() {
 						</Box>
 					)}
 
-					<Text maxW={['100%', '50%']} fontSize={'sm'} fontWeight={400} pb={14} lineHeight={'140%'} mt={'80px'}>
+					<Text maxW={['100%', '70%']} fontSize={'sm'} fontWeight={400} pb={6} lineHeight={'140%'} pt={'60px'}>
 						{SLUG_DATA?.description}
 					</Text>
 
