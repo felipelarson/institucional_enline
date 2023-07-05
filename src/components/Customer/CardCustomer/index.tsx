@@ -32,7 +32,7 @@ export const CardCustomer = () => {
 					</Stack>
 					<Stack gap={6}>
 						<Stack justifyContent={'flex-start'}>
-							<Text color={'gray.500'} fontWeight={'bold'}>
+							<Text fontSize={'12px'} color={'gray.500'} fontWeight={'bold'}>
 								Suggest Solutions:
 							</Text>
 							<Button

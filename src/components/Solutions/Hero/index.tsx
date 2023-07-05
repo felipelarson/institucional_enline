@@ -17,6 +17,10 @@ export const Hero = () => {
 							href={item.href}
 							bgGradient={bgButtonGradient}
 							color={'white'}
+							_hover={{
+								bgGradient: bgButtonGradient,
+								cursor: 'pointer'
+							}}
 							rounded={'full'}
 							size={'degrade'}
 							w={['fit-content', '288px']}
@@ -58,6 +62,9 @@ export const Hero = () => {
 							w={'fit-content'}
 							size={'lg'}
 							fontSize={'14px'}
+							_hover={{
+								bgGradient: 'purple.500'
+							}}
 						>
 							Explore to know more
 						</Button>

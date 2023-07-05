@@ -3,7 +3,7 @@ import { MainTechnology } from '@/components/Technology';
 
 export default function technology() {
 	return (
-		<ContainerMain>
+		<ContainerMain bg={'#F1F6FF'}>
 			<Banner
 				title={'Innovative Energy'}
 				titleColor={'Technology by Enline'}
