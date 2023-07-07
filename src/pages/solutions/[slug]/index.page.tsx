@@ -193,7 +193,7 @@ export default function Slug() {
 							py={['30px', '60px']}
 							border={'1px solid #D8E1E9'}
 							borderRadius={20}
-							w={['100%', '85%']}
+							w={'100%'}
 							direction={['column', 'row']}
 							gap={10}
 						>

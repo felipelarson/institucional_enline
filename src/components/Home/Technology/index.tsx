@@ -2,7 +2,7 @@ import { TECHNOLOGY_DATA } from './technologyData';
 
 import { BannerWithScreen, ContainerMain, TitleSection } from '@/components/Common';
 
-import { Button, Flex, Stack, Text } from '@chakra-ui/react';
+import { Button, Flex, Heading, Stack, Text } from '@chakra-ui/react';
 import NextLink from 'next/link';
 
 export const Technology = () => {
@@ -19,24 +19,27 @@ export const Technology = () => {
 						<BannerWithScreen key={index} title={item.title} description={item.description} image={item.image} link={item.link} />
 					))}
 				</Stack>
+
 				<Flex w={'100%'} justifyContent={'center'}>
 					<Flex
 						justifyContent={'space-between'}
 						alignItems={'center'}
-						direction={['column', 'row']}
+						direction={['column', 'column', 'column', 'row']}
 						bg={'gray.50'}
 						p={'32px 24px 32px 34px'}
 						h={['fit-content', 'fit-content', 'fit-content', 144]}
 						border={'1px solid #D8E1E9'}
 						borderRadius={20}
-						w={['100%', '85%']}
+						w={'100%'}
 						gap={8}
 					>
-						<Text fontSize={'14px'} lineHeight={'19.6px'} fontWeight={'400'} flex={2}>
+						<Text fontSize={'14px'} lineHeight={'19.6px'} fontWeight={'400'}>
 							Experience the transformative power of Enline’s innovative technology. Dive deeper into our range of advanced solution.
 						</Text>
-						<Button as={NextLink} href={'/technology'} variant={'hero'} flex={1}>
-							Technology by Enline
+						<Button as={NextLink} href={'/technology'} variant={'primary'} w={'fit-content'} h={'55px'}>
+							<Heading as={'h2'} fontSize={'1.18rem'} px={'24px'}>
+								Technology by Enline
+							</Heading>
 						</Button>
 					</Flex>
 				</Flex>

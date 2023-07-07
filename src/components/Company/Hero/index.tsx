@@ -7,7 +7,7 @@ import { Stack } from '@chakra-ui/react';
 
 export const Hero = () => {
 	return (
-		<ContainerMain>
+		<ContainerMain p={[0, '16px 100px']}>
 			<Stack spacing={[10, 20]}>
 				<Banner
 					title={'Pioneers in Energy'}

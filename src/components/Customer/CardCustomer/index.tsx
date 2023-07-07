@@ -9,10 +9,10 @@ export const CardCustomer = () => {
 	const bgButtonGradient = 'linear(to-r, #5F296D, #33296D)';
 
 	return (
-		<Grid gap={[4, 8]} templateColumns={'repeat(auto-fit, minmax(330px, 1fr))'} mt={[10, 20]}>
+		<Grid gap={[5, 10]} templateColumns={'repeat(auto-fit, minmax(320px, 1fr))'} mt={[10, 20]}>
 			{CARD_CUSTUMER.map((item, index) => (
 				<Card key={index} px={4} py={5} bg={'white'} boxShadow={'none'} border={'1px solid #D8E1E9'} borderRadius={5}>
-					<Stack bg={'#F1F6FF'} p={4} borderRadius={5} mb={6} h={'250px'} justifyContent={'space-between'}>
+					<Stack bg={'#F1F6FF'} p={4} borderRadius={5} mb={6} h={'200px'} justifyContent={'space-between'}>
 						<Box
 							bg={'white'}
 							h={50}
@@ -25,10 +25,12 @@ export const CardCustomer = () => {
 								<Image src={require(`@/assets/svg/icon_${item.icons}.svg`)} alt={item.icons} />
 							</Flex>
 						</Box>
-						<Heading as="h2" size={'md'} fontSize={'lg'}>
+						<Text fontSize={'lg'} fontWeight={700} lineHeight={'140%'} maxW={'240px'}>
 							{item.title}
-						</Heading>
-						<Text>{item.subtitle}</Text>
+						</Text>
+						<Text fontSize={'sm'} fontWeight={400} lineHeight={'140%'} maxW={'240px'}>
+							{item.subtitle}
+						</Text>
 					</Stack>
 					<Stack gap={6}>
 						<Stack justifyContent={'flex-start'}>

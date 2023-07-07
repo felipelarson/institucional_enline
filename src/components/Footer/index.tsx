@@ -81,7 +81,7 @@ export const Footer = () => {
 						</Stack>
 					</Stack>
 				</SimpleGrid>
-				<Stack as={NextLink} href="/pdf/Ficha_do_Projeto_RHAQ_web.pdf" download={true} target="_blank" align={'center'} py={27}>
+				<Stack as={NextLink} href="/pdf/Ficha_do_Projetos_RHAQ_EPO.pdf" download={true} target="_blank" align={'center'} py={27}>
 					<Image src={require('@/assets/img/norte2020.png')} alt="Enline's brand" height={87} />
 				</Stack>
 				<Text fontSize={'sm'} align={'center'} fontWeight={400} pb={'39px'}>

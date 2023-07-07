@@ -29,7 +29,7 @@ export const TableReleaseVersions = () => {
 						EMS V2.0
 					</Button>
 
-					<Button
+					{/* <Button
 						as={NextLink}
 						href={'#ems_v1'}
 						w={'100%'}
@@ -44,7 +44,7 @@ export const TableReleaseVersions = () => {
 						_focus={{ color: '#6D63EB', bg: 'white' }}
 					>
 						EMS V1.0
-					</Button>
+					</Button> */}
 				</CardBody>
 			</Card>
 		</Box>

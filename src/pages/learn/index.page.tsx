@@ -8,7 +8,7 @@ export default function Learn() {
 	const isMobile = useBreakpointValue({ base: true, sm: true, md: true, lg: false, xl: false });
 	return (
 		<>
-			<ContainerMain bg={'#F1F6FF'}>
+			<ContainerMain bg={'#F1F6FF'} p={[0, '16px 100px']}>
 				<Box>
 					<Banner
 						title={'Expand Your Knowledge and'}

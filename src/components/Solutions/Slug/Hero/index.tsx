@@ -30,6 +30,9 @@ export const SlugHero = () => {
 								color={'white'}
 								rounded={'full'}
 								size={'degrade'}
+								_hover={{
+									bgGradient: bgButtonGradient
+								}}
 								w={'175px'}
 								h={'43px'}
 								justifyContent={'flex-start'}
@@ -88,6 +91,9 @@ export const SlugHero = () => {
 								color={'white'}
 								rounded={'full'}
 								size={'degrade'}
+								_hover={{
+									bgGradient: bgButtonGradient
+								}}
 								// w={'288px'}
 								w={'fit-content'}
 								h={'83px'}

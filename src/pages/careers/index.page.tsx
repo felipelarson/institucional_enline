@@ -12,7 +12,7 @@ export default function Careers() {
 	const mTop = isMobile ? '144px' : '0';
 	return (
 		<>
-			<ContainerMain bg={'#F1F6FF'}>
+			<ContainerMain bg={'#F1F6FF'} p={[0, '16px 100px']}>
 				<Stack gap={10} mt={mTop}>
 					{isMobile ? (
 						<Box

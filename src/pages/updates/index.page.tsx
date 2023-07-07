@@ -6,7 +6,7 @@ import { Flex, useBreakpointValue } from '@chakra-ui/react';
 export default function Updates() {
 	const isMobile = useBreakpointValue({ base: true, sm: true, md: false });
 	return (
-		<ContainerMain bg={'#F1F6FF'}>
+		<ContainerMain bg={'#F1F6FF'} p={[0, '16px 100px']}>
 			<Banner
 				title={'Stay up-to-date with the'}
 				titleColor={'latest developments'}

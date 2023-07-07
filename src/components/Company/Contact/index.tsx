@@ -24,13 +24,9 @@ export const Contact = () => {
 							<Stack gap={4}>
 								<Box>
 									<Text fontSize={'14px'}>Mirandela - Portugal</Text>
-								</Box>
-								<Box>
 									<Text fontSize={'14px'}>São Paulo - Brasil</Text>
-								</Box>
-								<Box>
-									<Text fontSize={'14px'}>Erlangen, Germany</Text>
-									<Text fontSize={'14px'}>Lima, Peru</Text>
+									<Text fontSize={'14px'}>Erlangen - Germany</Text>
+									<Text fontSize={'14px'}>Lima - Peru</Text>
 								</Box>
 							</Stack>
 						</CardBody>

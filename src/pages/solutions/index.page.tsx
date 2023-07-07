@@ -3,7 +3,7 @@ import { Hero } from '@/components/Solutions';
 
 export default function Solutions() {
 	return (
-		<ContainerMain bg={'#F1F6FF'}>
+		<ContainerMain bg={'#F1F6FF'} p={[0, '16px 100px']}>
 			<Banner
 				title="Unlock the Power of Your"
 				titleColor="Energy Infrastructure"
