@@ -35,8 +35,11 @@ export default function CareersDetails() {
 					<Heading as={'h2'} fontSize={'42px'} fontWeight={600}>
 						{content?.title}
 					</Heading>
-					<Text maxW={'50%'} fontSize={'sm'} fontWeight={400} pb={14} lineHeight={'140%'}>
-						{content?.subtitle}
+					<Text maxW={'50%'} fontSize={'sm'} fontWeight={400} lineHeight={'100%'}>
+						Position: {content?.subtitle.position}
+					</Text>
+					<Text maxW={'50%'} fontSize={'sm'} fontWeight={400} pb={14} lineHeight={'100%'}>
+						Type: {content?.subtitle.type}
 					</Text>
 				</Stack>
 			</ContainerMain>
@@ -49,17 +52,18 @@ export default function CareersDetails() {
 
 				<Stack spacing={12} w={{ base: '80%', md: '80%' }} align={'flex-start'} borderLeft={'1px solid #D8E1E9'} p={'36px'}>
 					<Text fontSize={'md'} fontWeight={700} lineHeight={'140%'} color={'#011F3B'}>
-						Experiência Profissional
+						Overview
 					</Text>
+
 					<UnorderedList>
 						{content?.experience.map((item, index) => (
-							<ListItem key={index} ml={'16px'} fontSize={'sm'} lineHeight={'180%'}>
+							<Text key={index} ml={'16px'} fontSize={'sm'} lineHeight={'180%'}>
 								{item}
-							</ListItem>
+							</Text>
 						))}
 					</UnorderedList>
 					<Text fontSize={'md'} fontWeight={700} lineHeight={'140%'} color={'#011F3B'}>
-						Experiência Profissional
+						Your Role
 					</Text>
 					<UnorderedList>
 						{content?.otherExperience.map((item, index) => (
@@ -69,13 +73,30 @@ export default function CareersDetails() {
 						))}
 					</UnorderedList>
 					<Text fontSize={'md'} fontWeight={700} lineHeight={'140%'} color={'#011F3B'}>
-						Local de Trabalho
+						Essential Qualities for Success
 					</Text>
 					<UnorderedList>
-						{content?.local.map((item, index) => (
+						{content?.essentialQualities?.map((item, index) => (
 							<ListItem key={index} ml={'16px'} fontSize={'sm'} lineHeight={'180%'}>
 								{item}
 							</ListItem>
+						))}
+					</UnorderedList>
+					<Text fontSize={'md'} fontWeight={700} lineHeight={'140%'} color={'#011F3B'}>
+						About Enline...
+					</Text>
+					<UnorderedList>
+						{content?.about?.map((item, index) => (
+							<ListItem key={index} ml={'16px'} fontSize={'sm'} lineHeight={'180%'}>
+								{item}
+							</ListItem>
+						))}
+					</UnorderedList>
+					<UnorderedList>
+						{content?.local.map((item, index) => (
+							<Text key={index} ml={'16px'} fontSize={'sm'} lineHeight={'180%'}>
+								{item}
+							</Text>
 						))}
 					</UnorderedList>
 				</Stack>

@@ -182,7 +182,10 @@ export default function Careers() {
 											{job.title}
 										</Text>
 										<Text fontSize={'sm'} lineHeight={'140%'} fontWeight={400}>
-											{job.subtitle}
+											Position: {job.subtitle.position}
+										</Text>
+										<Text fontSize={'sm'} lineHeight={'140%'} fontWeight={400}>
+											Type: {job.subtitle.type}
 										</Text>
 									</Box>
 									<hr />
